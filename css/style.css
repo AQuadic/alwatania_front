@@ -39,6 +39,7 @@ header .container {
     align-items: center;
     gap: 60px;
     padding: 18px;
+    flex-direction: row-reverse;
 }
 header .container img {
 
@@ -341,7 +342,7 @@ button.tsok , .tv-about .tv-details .add-to{
   footer.footer-dec {
     display: flex;
     justify-content: space-around;
-  
+    flex-direction: row-reverse;
 }
 .l-footer {
   max-width: 400px;
@@ -370,8 +371,6 @@ p.footer-links {
 .r-footer {
   display: flex;
   gap: 90px;
- 
-  text-align: end;
 }
 
 li.r-title {
@@ -809,11 +808,6 @@ li.mt {
 .page-login .login-logo .imgsmall{
  display: none;
 }
-.page-login .form-login {
-  
-  direction: rtl;
-  
-}
 .page-login .form-login h1, .page-login .headform h1 {
   font-size: 24px;
   font-weight: 400;
@@ -855,15 +849,15 @@ max-width: 156px;
  margin-bottom: 18px;
 }
 .page-login .form-login .login-email h2,.page-login .form-login .login-pass h2,.login-name h2 {
-  text-align: start;
+ 
   font-size: 22px;
   margin-bottom: 18px;
 }
-.page-login .form-login .login-email input[type="email"],.page-login .form-login .login-pass input[type="password"],.login-name input[type="text"] {
+.page-login .form-login .login-email input[type="email"], .page-login .form-login .login-pass input[type="password"], .login-name input[type="text"] {
   width: 425px;
   height: 70px;
   border-radius: 8px;
-  padding-right: 24px;
+  padding: 0px 24px;
   border: 1px solid #707070;
   font-size: 20px;
   color: black;
@@ -905,7 +899,7 @@ color:rgb(131, 131, 131);}
 }
 @media (max-width:1200px){
   .page-login .container {
-   
+    flex-direction: column-reverse;
   flex-wrap: wrap; 
 }
 
@@ -952,7 +946,7 @@ margin-bottom: 20px;
 }
 .chek {
   display: flex;
-  direction: ltr;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -1029,7 +1023,7 @@ padding:25px 0px 40px;
   color: #b63b4d;
 }
 .tv .breadcrumb-item + .breadcrumb-item::before  {
-
+  float: inherit;
   padding: 0 1.5rem;
   color: #6c757d;
   
@@ -1353,13 +1347,13 @@ h1 a {
       padding-bottom: 50px;
     }
     .tv-product .container {
-      direction: rtl;
+    
   }
     .tv-product .breadcrumb-item + .breadcrumb-item::before {
-      float: right;
+      float: inherit;
     padding: 0 1.5rem;
     color: #6c757d;
-    transform: rotateY(180deg);
+   
   }
   .tv .breadcrumb-item.active, .tv-product .breadcrumb-item.active {
     font-size: 25px;
@@ -1493,7 +1487,7 @@ width: 100%;
 }
 /*===============================suport====================*/
 .support {
-  direction: rtl;
+
   margin-bottom: 90px;
   padding-top: 25px;
 }
@@ -1624,6 +1618,8 @@ summary {
   outline: none;
   font-size: 26px;
   padding: 13px 50px;
+  display: flex;
+  justify-content: space-between;
 }
 summary:selection {
   background: transparent;
@@ -1654,12 +1650,10 @@ summary:after {
 .collaps-tv {
   padding: 150px 0px 80px;
 }
-.collaps-tv .container{
-direction: rtl;
-}
+
 /*====================================================start main page ============================*/
 .main {
-  direction: rtl;
+ 
   height: 100%;
 }
 .main .container {
@@ -2046,12 +2040,12 @@ padding-bottom: 100px;
   
 }
 .basket h1{
-text-align: end;
+
 margin-bottom: 30px;
 }
 .basket .my-basket {
   display: flex;
-  direction: rtl;
+ 
   gap: 40px;
 }
 .basket .my-basket .all-basket{
@@ -2274,7 +2268,7 @@ margin-bottom: 40px;
 .pay {
   padding-top: 50px;
   background-color: #fdc85b59;
-  direction: rtl;
+ 
   padding-bottom: 80px;
 }
 .pay .container {
