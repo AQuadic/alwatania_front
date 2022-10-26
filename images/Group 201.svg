@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="263" height="94" viewBox="0 0 263 94">
+  <g id="Group_201" data-name="Group 201" transform="translate(-547 -370)">
+    <g id="Rectangle_57" data-name="Rectangle 57" transform="translate(547 370)" fill="none" stroke="#3b5998" stroke-width="2">
+      <rect width="263" height="94" rx="21" stroke="none"/>
+      <rect x="1" y="1" width="261" height="92" rx="20" fill="none"/>
+    </g>
+    <g id="Group_200" data-name="Group 200" transform="translate(17.457)">
+      <g id="facebook" transform="translate(575.543 395)">
+        <circle id="Ellipse_119" data-name="Ellipse 119" cx="23" cy="23" r="23" transform="translate(0 0)" fill="#3b5998"/>
+        <path id="Path_251" data-name="Path 251" d="M51,36.641H46.926V51.576H40.75V36.641H37.812V31.392H40.75V28c0-2.429,1.154-6.232,6.232-6.232l4.575.019v5.095h-3.32a1.257,1.257,0,0,0-1.31,1.431V31.4h4.616Z" transform="translate(-22.413 -12.9)" fill="#fff"/>
+      </g>
+      <text id="facebook-2" data-name="facebook" transform="translate(638 426)" fill="#3b5998" font-size="30" font-family="Dubai-Regular, Dubai"><tspan x="0" y="0">facebook</tspan></text>
+    </g>
+  </g>
+</svg>
