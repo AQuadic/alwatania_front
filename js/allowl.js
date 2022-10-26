@@ -15,7 +15,7 @@
                 nav:true,
                     autoplayTimeout: 8500,
                     smartSpeed: 650,
-                  navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">',' '],
+                  navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
                             items: 1
@@ -56,7 +56,7 @@
                 nav:true,
                     autoplayTimeout: 8500,
                     smartSpeed: 450,
-                  navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">',' '],
+                    navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
                             items: 1
@@ -99,7 +99,7 @@
                 nav:true,
                     autoplayTimeout: 8500,
                     smartSpeed: 650,
-                  navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">',' '],
+                    navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
                             items: 1
@@ -133,7 +133,7 @@
                 nav:true,
                     autoplayTimeout: 8500,
                     smartSpeed: 450,
-                  navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">',' '],
+                    navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
                             items: 1

@@ -86,7 +86,7 @@ margin: 85px auto;
 .section .container h2, .testimonials h2, .alamat h2, li.r-title, .r-title h3 {
   font-size: 24px;
   font-weight: bold;
-  text-align: end;
+ 
   margin-bottom: 14px;
  
 }
@@ -193,20 +193,25 @@ li.r-title, .r-title h3{
     z-index: 50;
 }
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
+  direction: ltr;
 }
-.testimonials button.owl-prev {
+.testimonials button.owl-prev ,.testimonials button.owl-next {
   position: absolute;
   top: calc(50% - 111px);
-  left: -41px;
-  height: 90px;
-  width: 90px;
+  left: -13px;
+  height: 80px;
+  width: 80px;
   box-shadow: 1px 1px 13px #9393939c;
   border-radius: 50%;
   z-index: 100;
 }
-.testimonials button.owl-prev img {
+.testimonials button.owl-next {
+  top: calc(50% - 112px);
+  left: calc(100% - 60px);
+}
+.testimonials button.owl-prev img ,.testimonials button.owl-next img{
  width: 50%;
 }
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
@@ -241,11 +246,9 @@ button.tsok , .tv-about .tv-details .add-to{
     }
 }
 @media (max-width:620px){
-    .testimonials button.owl-prev {
-        
-        left: -27px;
-        height: 80px;
-        width: 80px;
+    .testimonials button.owl-prev,.testimonials button.owl-next {
+      height: 56px;
+      width: 56px;
     }
     .section .container h2 ,.testimonials h2 ,.alamat h2,li.r-title , .r-title h3 {
         font-size: 23px;
@@ -408,6 +411,7 @@ li.r-title {
         position: relative;
         max-width: 350px;
         margin-bottom: 45px;
+        direction: ltr;
     }
 
     .email  input[type="email"] {
@@ -512,7 +516,7 @@ section .navigation {
   position: relative;
   background: var(--white);
   margin-bottom: 60px;
-  direction: rtl;
+ 
   height: 100%;
 }
 section .navigation img.logo-img {
@@ -538,7 +542,7 @@ section .nav_link, section .btn {
     justify-content: center;
     gap: 1rem;
     
-    direction: rtl;
+   
     font-size: 23px;
     font-family: Dubai;
     align-items: center;
@@ -586,7 +590,7 @@ section .dropdown {
 }
 
 section .dropdown-inner {
-    direction: rtl;
+  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
@@ -1011,7 +1015,7 @@ text-align: center;
 background-color: #faa3512c;
 }
 .tv .container {
-  direction: rtl;
+ 
   
 }
 .tv .container nav ,.tv-product nav{
@@ -1025,10 +1029,10 @@ padding:25px 0px 40px;
   color: #b63b4d;
 }
 .tv .breadcrumb-item + .breadcrumb-item::before  {
-  float: right;
+
   padding: 0 1.5rem;
   color: #6c757d;
-  transform: rotateY(180deg);
+  
   
 }
 .option {
@@ -1051,7 +1055,7 @@ margin-top: 15px;
 .tv .container .show {
   display: flex;
   width: 100%;
-  direction: ltr;
+ 
   text-align: end;
   margin-top: 45px;
   padding-bottom: 40px;
@@ -1198,7 +1202,7 @@ h1 a {
 .tv .show .about-product {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
+ 
   margin-bottom: 70px;
   gap: 20px;
 }
@@ -1219,7 +1223,7 @@ h1 a {
     height: 65px;
     font-size: 25px;
     font-weight: 200;
-    text-align: end;
+   
     background-position: left 0.75rem center;
 }
 .tv .show .about-product .sort-product select option{
@@ -1238,10 +1242,11 @@ h1 a {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: end;
 }
 /*========================line show ============*/
 .show .show-line {
-  margin-top: 80px;
+  margin: 80px auto;
   position: relative;
   width: 90%;
 }
