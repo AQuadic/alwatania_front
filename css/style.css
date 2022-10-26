@@ -1326,6 +1326,7 @@ h1 a {
   @media (max-width:440px){
     .show .all-item .item {
       width: 100%;
+      flex: 100%;
   }
   .show .all-item .item img {
     width: 100%;
