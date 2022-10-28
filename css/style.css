@@ -106,6 +106,7 @@ li.r-title,
   text-align: center;
   border-radius: 20px;
   max-width: 285px;
+  overflow: hidden;
 }
 
 .section .container .allimage .part img {
