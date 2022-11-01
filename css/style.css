@@ -288,7 +288,7 @@ button.tsok:hover,
 .tv-about .tv-details .add-to:hover,
 .pay .pay-data .order-now:hover,
 .pay .add-card:hover {
-  font-size: 22px;
+ 
   background-color: transparent;
   color: #e23734;
   border: 1px #e23734 solid;
@@ -1269,10 +1269,10 @@ h1 a {
 }
 .show .show-line h3 {
   position: absolute;
-  top: -10px;
+  top: -13px;
   left: 50%;
   background-color: #feefe1;
-  padding: 0px 18px;
+  padding: 0px 12px;
   transform: translateX(-50%);
   font-size: 20px;
   margin: 0;
@@ -2346,7 +2346,7 @@ summary:after {
   font-size: 25px;
   font-weight: 400;
   margin: 15px auto;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 .pay .pay-user {
   flex: 0.5;
