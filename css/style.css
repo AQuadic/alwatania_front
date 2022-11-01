@@ -34,13 +34,13 @@ a:hover {
 
 header {
   background: linear-gradient(90deg, #ae0028, #faa451);
-  height: 65px;
+  height: 40px;
 }
 header .container {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 18px;
+  padding: 6px;
   flex-direction: row-reverse;
 }
 header .container img {
@@ -53,7 +53,7 @@ header .container .conact img {
 }
 header h2 {
   font-family: Dubai;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   font-weight: 400;
   margin: 0;
@@ -97,15 +97,15 @@ li.r-title,
 .section .container .allimage {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 26px;
   justify-content: center;
   /* align-items: center; */
 }
 .section .container .allimage .part {
-  background-color: #e2373421;
+  background-color: #e9e9e963;
   text-align: center;
   border-radius: 20px;
-  max-width: 285px;
+  max-width: 224px;
   overflow: hidden;
 }
 
@@ -115,7 +115,7 @@ li.r-title,
 }
 .section .container .allimage .part h1 {
   font-weight: 400;
-  padding: 25px 0px;
+  padding: 8px 0px;
   font-size: 22px;
 }
 
@@ -142,23 +142,24 @@ li.r-title,
 .testimonials .item,
 .show .item,
 .perfect .main-about .item {
-  background-color: #f2814021;
+  background-color: #f1f1f15c;
   border-radius: 25px;
   position: relative;
 }
 .testimonials .item .item-details,
 .show .item .item-details,
 .perfect .main-about .item .item-details {
-  padding: 20px 16px 20px 8px;
+  padding: 8px 16px 4px 12px;
 }
 .testimonials .item .item-details h5,
 .show .item .item-details h5,
 .perfect .main-about .item .item-details h5 {
   text-align: end;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 .testimonials .item .item-details .add,
 .show .item .item-details .add,
@@ -215,16 +216,16 @@ li.r-title,
 .testimonials button.owl-next {
   position: absolute;
   top: calc(50% - 111px);
-  left: -10px;
-  height: 80px;
-  width: 80px;
+  left: -30px;
+  height: 54px;
+  width: 54px;
   box-shadow: 1px 1px 13px #9393939c;
   border-radius: 50%;
   z-index: 100;
 }
 .testimonials button.owl-next {
   top: calc(50% - 112px);
-  left: calc(100% - 60px);
+  left: calc(100% - 30px);
 }
 .testimonials button.owl-prev img,
 .testimonials button.owl-next img {
@@ -306,7 +307,7 @@ button.tsok:hover,
 .app .container {
 }
 .app .container .logostor {
-  left: 60%;
+  right: 4%;
   position: absolute;
   z-index: 50;
   top: 58%;
@@ -324,16 +325,14 @@ button.tsok:hover,
 
 /*start alamat*/
 .alamat {
-  padding: 85px 0px;
+  padding: 44px 0px;
 }
 
 .alamat .logo-company {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(98px, 170px));
-  grid-column-gap: 140px;
-  align-items: center;
-  text-align: end;
-  justify-content: center;
+  grid-column-gap: 0px;
+  
 }
 .alamat .logo-company img {
   width: 75%;
@@ -455,18 +454,19 @@ li.r-title {
   border: none;
 }
 .imagestore {
-  max-width: 150px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imagestore img {
-  width: 100%;
+  width: 92%;
   margin-bottom: 10px;
 }
 /*end footer*/
 
 /*copy*/
 .copy h4 {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   color: #ffffffc9;
   font-weight: 400;
@@ -514,9 +514,8 @@ section .container {
   margin: 0 auto;
   padding: 0 1rem;
   position: relative;
-  padding-top: 40px;
+  padding-top: 16px;
 }
-
 section .navigation {
   display: flex;
   align-items: center;
@@ -524,19 +523,18 @@ section .navigation {
   height: var(--nav-height);
   position: relative;
   background: var(--white);
-  margin-bottom: 60px;
-
+  margin-bottom: 20px;
   height: 100%;
 }
 section .navigation img.logo-img {
-  max-width: 300px;
+  max-width: 246px;
 }
 section .nav_list {
   display: inline-flex;
   gap: 2rem;
   align-items: center;
   margin: 0 1.5rem;
-  padding-bottom: 40px;
+  padding-bottom: 12px;
 }
 
 section .nav_action {
@@ -557,8 +555,8 @@ section .btn {
 }
 section .nav_link,
 section .btn h2 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 400;
 }
 section .nav_link:hover,
 section .btn:hover {
@@ -665,12 +663,7 @@ section .item-list-info a h4 {
   font-size: 22px;
   font-weight: 300;
 }
-@media (max-width: 1450px) {
-  section .nav_link,
-  section .btn {
-    font-size: 20px;
-  }
-}
+
 section .nav_menu {
   text-align: center;
   display: flex;
@@ -686,11 +679,11 @@ section .nav_menu {
 .main_search {
   position: relative;
   /* flex: 1; */
-  width: 650px;
+  width: 560px;
 }
   input[type="search"] {
     width: 100%;
-    height: 60px;
+    height: 46px;
     border-radius: 17px;
     padding-right: 60px;
     padding-left: 10PX;
@@ -700,7 +693,7 @@ section .nav_menu {
     color: #858585;
 }
 input[type="search"]::placeholder {
-  font-size: 20px;
+  font-size: 14px;
   color: #858585;
 }
 
