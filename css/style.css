@@ -558,6 +558,7 @@ section .btn {
 section .nav_link,
 section .btn h2 {
   font-size: 20px;
+  font-weight: bold;
 }
 section .nav_link:hover,
 section .btn:hover {
