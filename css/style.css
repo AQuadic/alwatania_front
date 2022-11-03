@@ -20,16 +20,7 @@ a:hover {
   color: black;
 }
 
-@media (min-width: 1400px) {
-  .container-xxl,
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 1640px;
-  }
-}
+
 /*start header*/
 
 header {
@@ -664,7 +655,8 @@ section .dropdown {
 
 section .dropdown-inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 0.2fr));
+ 
   gap: 1rem;
   padding: 2rem 4rem;
   text-align: start;
@@ -736,6 +728,11 @@ section .nav_menu {
   section .btn-primary {
     padding: 0.4rem 1rem;
   }
+}
+@media (max-width: 512px) {
+  section .dropdown-inner {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 0.2fr));
+}
 }
 .main_search {
   position: relative;
@@ -1530,10 +1527,7 @@ h1 a {
   margin: 40px auto;
 }
 @media (max-width: 1400px) {
-  .tv-about {
-    gap: 60px;
-    flex-direction: column;
-  }
+ 
   .tv-about .tv-image {
     width: 100%;
   }
@@ -1551,6 +1545,12 @@ h1 a {
   }
   .tv-about .tv-image .sm-image img {
     width: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .tv-about {
+    gap: 60px;
+    flex-direction: column;
   }
 }
 /*===============================suport====================*/
