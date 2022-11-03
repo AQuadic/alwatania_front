@@ -339,6 +339,7 @@ button.tsok:hover,
 .app .container .logostor img {
   margin-left: 20px;
   width: 38%;
+  max-width: 200px;
 }
 @media (max-width: 770px) {
   .app .container {
@@ -385,7 +386,7 @@ button.tsok:hover,
 
 .alamat .logo-company {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(98px, 170px));
+  grid-template-columns: repeat(auto-fill, minmax(98px, 150px));
   grid-column-gap: 0px;
   
 }
@@ -498,7 +499,10 @@ li.r-title {
   font-size: 16px;
 }
 .email input[type="email"]::placeholder {
-  color: rgb(158, 158, 158);
+  color: rgb(39, 38, 38);
+}
+.email input[type="email"]:focus-visible{
+  outline: white 2px solid;
 }
 .email button {
   position: absolute;
