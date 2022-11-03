@@ -302,6 +302,9 @@ button.tsok:hover,
 /*start image app*/
 .app {
   position: relative;
+  max-width: 1320px;
+  display: block;
+  margin: auto;
 }
 .app .bigimage {
   width: 100%;
