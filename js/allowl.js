@@ -116,7 +116,7 @@
             "use strict";
             $('#customers-testimonials4').owlCarousel( {
                     loop: true,
-                    center: true,
+                    center: false,
                     items: 3,
                     margin: 35,
                     autoplay: false,

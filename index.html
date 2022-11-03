@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body>
+  <body >
     <!-- Navbar -->
     <header class="header">
       <div class="container">
@@ -1106,18 +1106,26 @@
 
     <!--===================================================================================-->
     <!--start image app-->
-    <div class="app">
-      <img
-        src="./images/rm372-k-210-c14-mockup-text2.svg"
+    <div class="app" id="app">
+      <img id="rot"
+        src="./images/rm372-k-210-c14-mockup-textPNG.png"
         class="bigimage"
         alt=""
       />
-      <div class="container">
-        <div class="logostor">
-          <a href=""><img src="./images/Group 102.svg" alt="" /></a>
-          <a href=""><img src="./images/Group 103.svg" alt="" /></a>
+      <div class="context">
+        <div class="container">
+          <div class="about-app">
+            <h2>تطبيق الوطنية</h2>
+            <h3>يساعدك في اختيار اجهزتك  بكل سهولة<br>
+            حمل التطبيق الان التطبيق متاح علي كلا من Android و ios</h3>
+          </div>
+          <div class="logostor">
+            <a href=""><img src="./images/Group 102.svg" alt="" /></a>
+            <a href=""><img src="./images/Group 103.svg" alt="" /></a>
+          </div>
         </div>
       </div>
+    
     </div>
 
     <!--end image app-->
@@ -1234,6 +1242,27 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+const d =document.dir
+const rot_image =document.getElementById("rot");
+console.log(rot_image )
+window.onchange=function(){
+  if(d==="ltr"){
+ // Code for Chrome, Safari, Opera
+ rot_image.style.WebkitTransform = "rotateY(180deg)"; 
+    // Code for IE9
+    rot_image.style.msTransform = "rotateY(180deg)"; 
+    // Standard syntax
+    rot_image.style.transform = "rotateY(180deg)"; 
+}
+
+}
+
+
+console.log(d)
+
+
+
+
     </script>
   </body>
 </html>

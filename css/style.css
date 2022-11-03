@@ -271,6 +271,7 @@ button.tsok,
   .testimonials button.owl-next {
     height: 56px;
     width: 56px;
+    
   }
   .section .container h2,
   .testimonials h2,
@@ -280,10 +281,20 @@ button.tsok,
     font-size: 23px;
   }
 }
+@media (max-width:580px){
+  .testimonials button.owl-prev{
+    left: -10px;
+  }
+  .testimonials button.owl-next {
+  
+    left: calc(100% - 45px);
+}
+}
 @media (max-width: 345px) {
   .testimonials .item .item-details .add p.salary {
     font-size: 19px;
   }
+  
 }
 button.tsok:hover,
 .tv-about .tv-details .add-to:hover,
@@ -303,24 +314,74 @@ button.tsok:hover,
 }
 .app .bigimage {
   width: 100%;
+  max-height: 800px;
 }
 .app .container {
+  position: absolute;
+  top: 20%;
+  padding: 0px 20px;
+  max-width: 50%;
+  z-index: 1000;
+}
+.app .container .about-app {
+  color: white;
+  max-width: 370px;
+}
+.app .container  h3 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: ui-sans-serif;
+} 
+.app .container h2 {
+  font-size: 38px;
+  font-weight: bold;
+  font-family: 'Font Awesome 5 Free';
+  margin-bottom: 24px;
 }
 .app .container .logostor {
-  right: 4%;
-  position: absolute;
-  z-index: 50;
-  top: 58%;
+  margin-top: 44px;
+ 
 }
 .app .container .logostor img {
   margin-left: 20px;
   width: 38%;
 }
-@media (max-width: 700px) {
-  .app .container .logostor img {
-    margin-left: 3px;
-  }
+@media (max-width: 770px) {
+  .app .container {
+    top: 14%;
+   
+ 
 }
+.app .container .about-app {
+  max-width: 280px;
+}
+.app .container .logostor img {
+  margin-left: 10px;
+  width: 49%;
+  display: inline-block;
+  margin: auto;
+}
+}
+@media (max-width: 550px) {
+  
+.app .container h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.app .container h3 {
+  font-size: 16px;
+}
+.app .container .logostor {
+  margin-top: 16px; 
+}
+}
+@media (max-width: 370px) {
+  .app .container {
+    top: 8%;
+   
+}
+}
+
 /* end image app*/
 
 /*start alamat*/
