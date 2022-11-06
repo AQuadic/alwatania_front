@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="Group_38" data-name="Group 38" transform="translate(-1428 -3639)">
-    <rect id="Rectangle_29" data-name="Rectangle 29" width="30" height="30" transform="translate(1428 3639)" fill="none"/>
-    <path id="ic_add_shopping_cart_24px" d="M11,9h2V6h3V4H13V1H11V4H8V6h3ZM7,18a2,2,0,1,0,2,2A2,2,0,0,0,7,18Zm10,0a2,2,0,1,0,2,2A2,2,0,0,0,17,18ZM7.17,14.75l.03-.12L8.1,13h7.45a1.991,1.991,0,0,0,1.75-1.03l3.86-7.01L19.42,4h-.01l-1.1,2-2.76,5H8.53l-.13-.27L6.16,6,5.21,4,4.27,2H1V4H3l3.6,7.59L5.25,14.04A1.933,1.933,0,0,0,5,15a2.006,2.006,0,0,0,2,2H19V15H7.42A.254.254,0,0,1,7.17,14.75Z" transform="translate(1432 3642)" fill="#ae0028"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_38" data-name="Group 38" transform="translate(0.43 0.175)" opacity="0.5">
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="24" height="24" transform="translate(-0.43 -0.175)" fill="none"/>
+    <path id="ic_add_shopping_cart_24px" d="M9.011,7.408h1.6v-2.4h2.4V3.4h-2.4V1h-1.6V3.4h-2.4v1.6h2.4Zm-3.2,7.21a1.6,1.6,0,1,0,1.6,1.6A1.6,1.6,0,0,0,5.806,14.618Zm8.011,0a1.6,1.6,0,1,0,1.6,1.6A1.6,1.6,0,0,0,13.817,14.618Zm-7.874-2.6.024-.1.721-1.306h5.968a1.6,1.6,0,0,0,1.4-.825l3.092-5.615L15.756,3.4h-.008l-.881,1.6L12.655,9.011H7.032l-.1-.216L5.133,5.005,4.372,3.4,3.619,1.8H1V3.4H2.6l2.884,6.08L4.4,11.446a1.549,1.549,0,0,0-.2.769,1.607,1.607,0,0,0,1.6,1.6h9.613v-1.6H6.143A.2.2,0,0,1,5.943,12.015Z" transform="translate(3.005 2.204)" fill="#ae0028"/>
   </g>
 </svg>
