@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,7 +28,7 @@
     <!-- Navbar -->
     <header class="header">
       <div class="container">
-        <img src="./images/Group 3.svg" alt="" />
+        <img id="change-lang" src="./images/Group 3.svg" alt="" />
         <div class="conact">
           <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="" />
           <h2>الدعم والمساعدة</h2>
@@ -1011,6 +1011,22 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+
+
+const lang = document.getElementById("change-lang");
+
+
+ 
+  
+lang.onclick=()=>{
+    if(document.dir==="rtl"){
+      document.dir="ltr";
+    }
+    else {
+      document.dir="rtl"
+    }
+}
+
+</script>
   </body>
 </html>

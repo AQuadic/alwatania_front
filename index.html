@@ -27,7 +27,7 @@
     <!-- Navbar -->
     <header class="header">
       <div class="container">
-        <img src="./images/Group 3.svg" alt="" />
+        <img id="change-lang" src="./images/Group 3.svg" alt="" />
         <div class="conact">
           <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="" />
           <h2>الدعم والمساعدة</h2>
@@ -1243,17 +1243,32 @@
       AOS.init();
 const d =document.dir
 const rot_image =document.getElementById("rot");
+const lang = document.getElementById("change-lang");
 console.log(rot_image )
 window.onchange=function(){
-  if(d==="ltr"){
- // Code for Chrome, Safari, Opera
+ 
+  
+lang.onclick=()=>{
+    if(document.dir==="rtl"){
+      document.dir="ltr";
+      // Code for Chrome, Safari, Opera
  rot_image.style.WebkitTransform = "rotateY(180deg)"; 
     // Code for IE9
     rot_image.style.msTransform = "rotateY(180deg)"; 
     // Standard syntax
     rot_image.style.transform = "rotateY(180deg)"; 
+    }
+    else {
+      document.dir="rtl";
+       // Code for Chrome, Safari, Opera
+ rot_image.style.WebkitTransform = "rotateY(0deg)"; 
+    // Code for IE9
+    rot_image.style.msTransform = "rotateY(80deg)"; 
+    // Standard syntax
+    rot_image.style.transform = "rotateY(0deg)"; 
+    }
+   
 }
-
 }
 
 

@@ -2339,11 +2339,10 @@ summary:after {
 /*====================================================end basket  ============================*/
 /*====================================================start pay-steps  ============================*/
 .h1-step {
-  background: linear-gradient(90deg, #ae0028, #faa451);
+  background: #fff8ea;
   margin: 0%;
   text-align: center;
-  padding: 33px 0px;
-  color: var(--white);
+  padding: 25px 0px;
   font-size: 25px;
 }
 .pay {

@@ -22,8 +22,67 @@
    
   </head>
   <body>
-    
-   
+    <header class="header">
+      <div class="container">
+<img id="change-lang" src="./images/Group 3.svg" alt="">
+<div class="conact">
+  <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="">
+  <h2>الدعم والمساعدة</h2>
+</div>
+<h2>تواصل معنا</h2>
+
+      </div>
+</header>
+   <!--big nav -->
+   <section>
+    <div class="container">
+      <nav class="navigation">
+        <a href="index.html" class="logo">
+          <img src="images/Group 6.svg" alt="Logo" class="logo-img" />
+        </a>
+        <div class="main_search">
+          <input
+            type="search"
+            name="search"
+            placeholder="البحث عن منتجات"
+            id=""
+          />
+          <img
+            src="./images/ic_search_24px.svg"
+            class="icon-search"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="nav_action">
+          <div class="login">
+            <a href="login.html" class="btn">
+              <img src="./images/ic_account_circle_24px.svg" style="width: 22px;" alt="" />
+              <h2>تسجيل الدخول</h2>
+            </a>
+            <ul class="logindrop">
+              <li><a href="main.html">حسابي</a></li>
+              <li><a href="#">طلباتي</a></li>
+              <li><a href="#">منتجاتي المفضلة</a></li>
+              <li class="mt">
+                <a href="#" class="text-danger">تسجيل الخروج</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#!">
+            <img
+              src="./images/ic_shopping_cart_24px.svg" style="width: 22px;"
+              alt="shopping_cart"
+            />
+          </a>
+          <div class="nav_toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+        </div>
+      </nav>
+     
+    </div>
+  </section>
 <h1 class="h1-step">خطوات الدفع</h1>
 <!--start pay-steps-->
 <div class="pay">
@@ -235,7 +294,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+const lang_ch = document.getElementById("change-lang");
+
+lang_ch.onclick=()=>{
+    if(document.dir==="rtl"){
+      document.dir="ltr";
+    }
+    else {
+      document.dir="rtl";
+    }
+}
+</script>
   
   </body>
 </html>

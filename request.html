@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <header class="header">
         <div class="container">
-<img src="./images/Group 3.svg" alt="">
+<img id="change-lang" src="./images/Group 3.svg" alt="">
 <div class="conact">
     <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="">
     <h2>الدعم والمساعدة</h2>
@@ -547,7 +547,23 @@
       <script src="./js/allowl.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    
+    <script>
+     
+const lang = document.getElementById("change-lang");
+
+lang.onclick=()=>{
+    if(document.dir==="rtl"){
+      document.dir="ltr";
+     
+    }
+    else {
+      document.dir="rtl";
+      
+    }
+   
+}
+
+</script>
     
   </body>
 </html>
