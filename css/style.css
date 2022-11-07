@@ -860,14 +860,14 @@ ul.logindrop {
   display: block;
 }
 .logindrop li {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .logindrop li a {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
 }
 li.mt {
-  margin-top: 40px;
+  margin-top: 34px;
 }
 /* end big nav */
 /*============================================= start page login=============================================*/
@@ -1763,7 +1763,7 @@ summary:after {
 }
 .main .container {
   display: flex;
-  gap: 100px;
+  gap: 60px;
   align-items: self-start;
 }
 .main .main-link {
@@ -1788,7 +1788,7 @@ summary:after {
 }
 .main .main-link .user .user-info h1 {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
 }
 .main .main-link ul {
   margin-bottom: 108px;
@@ -1827,7 +1827,7 @@ summary:after {
   padding-bottom: 70px;
 }
 .main .main-about h1 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
   color: #ae0028;
 }
@@ -1837,18 +1837,18 @@ summary:after {
   border-radius: 12px;
 }
 .main .main-about .part h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 .main .main-about .part p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
 }
 .main .main-about .part button {
-  width: 200px;
-  height: 52px;
+  width: 190px;
+  height: 45px;
   border: none;
   background-color: #e23734;
-  border-radius: 39px;
+  border-radius: 16px;
   color: white;
   font-size: 23px;
   margin-top: 15px;
@@ -1923,6 +1923,8 @@ summary:after {
   flex-wrap: wrap;
 }
 .perfect .main-about .item {
+  height: 100%;
+  background-color: #dddddd4d;
 }
 .perfect .main-about .item .item-details {
 }
@@ -1976,7 +1978,8 @@ summary:after {
 .req-about .now h1,
 .req-about .old h1 {
   color: black;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
+  font-weight: 400;
 }
 .req-about .now .now-req,
 .req-about .old .old-req {
@@ -1994,14 +1997,14 @@ summary:after {
   position: absolute;
   width: 150px;
   height: 57px;
-  font-size: 23px;
+  font-size: 22px;
   top: 0;
   left: 8%;
   text-align: center;
   padding-top: 14px;
   background-color: #ae0028;
   color: white;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 16px 16px;
 }
 .req-about .old .old-req .status {
   background-color: #06b11d;
@@ -2012,7 +2015,7 @@ summary:after {
 }
 .req-about .now .req-info h2,
 .req-about .old .req-info h2 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
   margin-top: 28px;
@@ -2025,7 +2028,7 @@ summary:after {
 }
 .req-about .now .req-info .req-num h3,
 .req-about .old .req-info .req-num h3 {
-  font-size: 28px;
+  font-size: 22px;
 }
 .req-about img {
   max-width: 220px;
