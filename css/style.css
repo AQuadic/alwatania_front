@@ -946,6 +946,7 @@ li.mt {
   border: 1px solid #707070;
   font-size: 20px;
   color: black;
+  direction: inherit;
 }
 .page-login .form-login .login-email input[type="email"]::placeholder,
 .page-login .form-login .login-pass input[type="password"]::placeholder,
@@ -1728,7 +1729,14 @@ summary:after {
 .collaps-tv {
   padding: 150px 0px 80px;
 }
-
+@media(max-width:400px){
+  summary {
+   
+    font-size: 18px;
+    padding: 20px 50px;
+  
+}
+}
 /*====================================================start main page ============================*/
 .main {
   height: 100%;
