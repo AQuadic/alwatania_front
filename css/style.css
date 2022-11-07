@@ -2513,7 +2513,8 @@ summary:after {
 }
 .pay .item4 .pay-card .form-check .choose-pay label,
 .pay .item4 .pay-cash .form-check label {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .pay .item4 .pay-card .form-check img {
@@ -2529,7 +2530,7 @@ summary:after {
   border-radius: 12px;
 }
 .pay .item4 .pay-card .pay-info1 h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 .pay .item4 .pay-card .pay-info1 form {
   justify-content: space-between;
@@ -2553,6 +2554,7 @@ summary:after {
 }
 .pay .item4 .pay-card .pay-info1 form input::placeholder {
   color: #ccc8c8;
+  font-size: 20px;
 }
 .pay .item4 span {
   width: 100%;
