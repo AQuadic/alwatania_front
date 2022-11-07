@@ -203,7 +203,7 @@ li.r-title,
 .testimonials button.owl-prev,
 .testimonials button.owl-next {
   position: absolute;
-  top: calc(50% - 111px);
+  top: calc(50% - 60px);
   left: -64px;
   height: 54px;
   width: 54px;
@@ -212,7 +212,7 @@ li.r-title,
   z-index: 100;
 }
 .testimonials button.owl-next {
-  top: calc(50% - 112px);
+ 
   left: calc(100% - -10px);
 }
 .testimonials button.owl-prev img,
