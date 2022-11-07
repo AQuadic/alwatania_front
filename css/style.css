@@ -175,7 +175,7 @@ li.r-title,
 .testimonials .item .item-details .add h6,
 .show .item .item-details .add h6,
 .perfect .main-about .item .item-details .add h6 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   font-weight: 400;
   color: #ae0028;
@@ -186,7 +186,7 @@ li.r-title,
   font-size: 20px;
   color: #ae0028;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 .fav {
   position: absolute;
@@ -874,11 +874,13 @@ li.mt {
 .page-login .container {
   display: flex;
   align-items: center;
-
   margin-bottom: 55px;
   justify-content: space-evenly;
   margin-top: 30px;
   gap: 45px;
+}
+.page-login .form-login {
+  max-width: 280px;
 }
 .page-login .login-logo {
   max-width: 65%;
@@ -893,17 +895,18 @@ li.mt {
 .page-login .headform h1 {
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 34px;
   text-align: center;
 }
 .page-login .form-login .login-with img {
-  max-width: 156px;
+ 
 }
 .page-login .form-login .login-with ul {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 .page-login .form-login .or {
   position: relative;
@@ -911,11 +914,11 @@ li.mt {
   align-items: center;
   justify-content: center;
   margin-top: 17px;
-  margin-bottom: 45px;
+  margin-bottom: 12px;
 }
 .page-login .form-login .or span {
   height: 1px;
-  width: 96%;
+  width: 100%;
   display: block;
   background-color: #707070;
 }
@@ -925,34 +928,36 @@ li.mt {
   background-color: white;
   border-radius: 5px;
   color: #616161;
-  left: 49%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .page-login .form-login .login-email {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 .page-login .form-login .login-email h2,
 .page-login .form-login .login-pass h2,
 .login-name h2 {
-  font-size: 22px;
-  margin-bottom: 18px;
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: 500;
 }
-.page-login .form-login .login-email input[type="email"],
-.page-login .form-login .login-pass input[type="password"],
-.login-name input[type="text"] {
-  width: 425px;
-  height: 70px;
+.page-login .form-login .login-email input[type="email"], .page-login .form-login .login-pass input[type="password"], .login-name input[type="text"] {
+  width: 100%;
+  height: 48px;
   border-radius: 8px;
-  padding: 0px 24px;
+  padding: 0px 16px;
   border: 1px solid #707070;
   font-size: 20px;
   color: black;
   direction: inherit;
+  max-width: 280px;
 }
 .page-login .form-login .login-email input[type="email"]::placeholder,
 .page-login .form-login .login-pass input[type="password"]::placeholder,
 .login-name input[type="text"]::placeholder {
-  font-size: 20px;
-  color: rgb(131, 131, 131);
+  font-size: 14px;
+  color: black;
+ 
 }
 .page-login .form-login .login-pass {
 }
@@ -968,27 +973,24 @@ li.mt {
   text-align: center;
 }
 .page-login .form-login .forget a {
-  font-size: 20px;
+  font-size: 16px;
   color: #e23734;
   text-decoration: underline;
 }
 .page-login .form-login input[type="submit"] {
-  width: 330px;
-  height: 60px;
+  width: 250px;
+  height: 50px;
   border-radius: 16px;
   border: none;
   outline: none;
   background-color: #e23734;
   color: white;
-  font-size: 26px;
-  margin: 50px auto 26px;
+  font-size: 18px;
+  margin: 40px auto 26px;
   display: block;
 }
 @media (max-width: 1200px) {
-  .page-login .container {
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-  }
+ 
 
   .page-login .login-logo .imgsmall {
     display: inline-block;
@@ -1003,8 +1005,9 @@ li.mt {
   .page-login .form-login .login-with img {
     width: 100%;
   }
-  .page-login .form-login .login-with li {
-    width: 45%;
+  .page-login .container {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
   }
   .page-login .form-login .login-email,
   .page-login .form-login .login-pass,
@@ -1015,11 +1018,16 @@ li.mt {
   .page-login .form-login .login-pass input[type="password"],
   .login-name input[type="text"] {
     width: 100%;
-    height: 57px;
+   
   }
   .page-login .form-login {
     width: 100%;
   }
+}
+@media(max-width:620px){
+  .page-login .form-login .login-email input[type="email"], .page-login .form-login .login-pass input[type="password"], .login-name input[type="text"] {
+    margin-right: 0px;
+}
 }
 @media (max-width: 400px) {
   .page-login .form-login input[type="submit"] {
@@ -1031,7 +1039,7 @@ li.mt {
 /*============================================= strat page انشاء حساب=============================================*/
 
 .login-name input[type="text"] {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .chek {
   display: flex;
@@ -1039,10 +1047,11 @@ li.mt {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  margin-top: 70px;
+  margin-top: 28px;
 }
 .chek h3 {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
 }
 @media (max-width: 400px) {
   .chek {
@@ -1075,7 +1084,7 @@ li.mt {
 }
 .page-login .cancle {
   display: block;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
   text-decoration: underline;
   margin-top: 10px;
@@ -1086,6 +1095,10 @@ li.mt {
   .headform {
     width: 100%;
   }
+}
+.getcount {
+  flex: 1;
+  width: 500px;
 }
 /*============================================= end page  forget=============================================*/
 /*============================================= strat page  tv=============================================*/
@@ -1133,7 +1146,7 @@ li.mt {
 
   text-align: end;
   margin-top: 45px;
-  padding-bottom: 40px;
+  padding-bottom: 200px;
 }
 .tv .container .show .products {
   width: 80%;
@@ -1157,9 +1170,10 @@ ul {
  * Contenedor Principal
  ===========================*/
 
-.show h1 {
-  font-size: 30px;
-  font-weight: 400;
+ .show h1 {
+  font-size: 24px;
+  text-align: start;
+  font-weight: bold;
 }
 
 h1 a {
@@ -1181,8 +1195,8 @@ h1 a {
   cursor: pointer;
   padding: 15px;
   color: #4d4d4d;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: bold;
   border-bottom: 1px solid #f28140;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -1192,9 +1206,6 @@ h1 a {
   align-items: center;
 }
 
-.accordion li:last-child .link {
-  border-bottom: 0;
-}
 
 .accordion li i {
   color: #595959;
@@ -1244,6 +1255,7 @@ h1 a {
   width: 28px;
   border: 1px solid rgb(243 129 64);
   background-color: transparent;
+  margin-right: 0px;
 }
 .tv .form-check {
   padding-bottom: 10px;
@@ -1253,8 +1265,9 @@ h1 a {
   border-color: #f38340;
 }
 .submenu label {
-  font-size: 20px;
-}
+  font-size: 16px;
+  padding-top: 5px;
+} 
 
 .submenu a {
   display: block;
@@ -1297,19 +1310,19 @@ h1 a {
   text-align: center;
 }
 .tv .show .about-product .unm-product h2 {
-  font-size: 27px;
+  font-size: 24px;
 }
 .tv .show .about-product .sort-product {
-  width: 50%;
+ 
 }
 .tv .show .about-product .sort-product select {
-  max-width: 400px;
-  min-width: 250px;
+  max-width: 323px;
+  min-width: 310px;
   border-radius: 8px;
-  height: 65px;
-  font-size: 25px;
+  height: 48px;
+  font-size: 18px;
+  margin: auto;
   font-weight: 200;
-
   background-position: left 0.75rem center;
 }
 .tv .show .about-product .sort-product select option {
@@ -1410,6 +1423,13 @@ h1 a {
   .tv .option .part img {
     width: 100%;
   }
+}
+@media (max-width: 535px){
+  .show .all-item {
+    justify-content: center;
+     flex-direction: column; 
+     align-items: center; 
+}
 }
 @media (max-width: 440px) {
   .show .all-item .item {
