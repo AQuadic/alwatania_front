@@ -792,7 +792,7 @@ img.icon-search {
   }
   section .nav_menu {
     position: absolute;
-    top: calc(100% + 62px);
+    top: 101%;
     left: 0;
     width: 100%;
     background: var(--dropdown-bg);
@@ -1139,6 +1139,7 @@ li.mt {
   font-size: 22px;
   margin-top: 15px;
 }
+
 /*====================================================show============================================*/
 .tv .container .show {
   display: flex;
@@ -1465,6 +1466,19 @@ h1 a {
   .tv .breadcrumb-item.active, .tv-product .breadcrumb-item.active {
     font-size: 25px;
    
+}
+@media(max-width:772px){
+  .tv ol.breadcrumb,
+.tv-product ol.breadcrumb ,.tv .breadcrumb-item.active, .tv-product .breadcrumb-item.active {
+  font-size:18px;
+  
+  
+}
+.tv .option .part h2 {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 400;
+}
 }
 /*===========================strat tv details=============*/
 .tv-about {
