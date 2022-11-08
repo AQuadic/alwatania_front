@@ -1767,11 +1767,12 @@ summary:after {
   align-items: self-start;
 }
 .main .main-link {
-  width: 370px;
+  width: 270px;
   background-color: white;
 
   padding: 8px 27px 30px 27px;
   border-radius: 0px 0px 30px 30px;
+  margin-top: 36px;
 }
 .main .main-link .user {
   display: flex;
@@ -1779,34 +1780,38 @@ summary:after {
 
   justify-content: space-between;
 }
+.main .main-link .user img{
+
+}
 .main .main-link .user .user-info {
 }
 .main .main-link .user .user-info h1,
 .main .main-link .user .user-info h2 {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
 }
 .main .main-link .user .user-info h1 {
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 18px;
 }
 .main .main-link ul {
-  margin-bottom: 108px;
+  margin-bottom: 80px;
 }
 .main .main-link ul li {
-  padding: 40px 0px 12px;
+  padding: 16px 0px 16px;
 }
 .main .main-link ul li a {
   display: flex;
   gap: 20px;
 }
 .main .main-link ul li a h2 {
-  font-size: 22px;
+  font-size: 16px;
   margin: 0;
+  font-weight: bold;
 }
 .main .main-link .logout {
   color: #ae0028;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   display: block;
@@ -1822,35 +1827,36 @@ summary:after {
   flex-direction: column;
   gap: 28px;
   flex: 1;
-  margin-top: 17px;
+  margin-top: 36px;
   height: 100%;
   padding-bottom: 70px;
 }
 .main .main-about h1 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: bold;
   color: #ae0028;
 }
 .main .main-about .part {
   background-color: white;
-  padding: 33px 25px;
-  border-radius: 12px;
+  padding: 16px 25px;
+  border-radius: 24px;
 }
 .main .main-about .part h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 .main .main-about .part p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #707070;
 }
 .main .main-about .part button {
   width: 190px;
-  height: 45px;
+  height: 50px;
   border: none;
   background-color: #e23734;
-  border-radius: 16px;
+  border-radius: 12px;
   color: white;
-  font-size: 23px;
+  font-size: 20px;
   margin-top: 15px;
 }
 @media (max-width: 1200px) {
@@ -1878,31 +1884,24 @@ summary:after {
     /* border-bottom: 1px black solid; */
   }
   .main .main-link ul li a h2 {
-    font-size: 18px;
+  
     margin: 0;
   }
   .main .main-link ul {
     margin-bottom: 15px;
   }
 
-  .main .main-link .user .user-info h1,
-  .main .main-link .user .user-info h2 {
-    font-size: 18px;
-    font-weight: 300;
-  }
-  .main .main-link .user .user-info h1 {
-    font-weight: bold;
-    font-size: 22px;
-  }
+  
+  
   .main .main-link .logout {
-    font-size: 18px;
+  
     text-align: end;
   }
 }
 @media (max-width: 455px) {
   .main .main-link {
     width: 100%;
-    padding: 8px 9px 30px 27px;
+    padding: 10px 10px 16px 22px;
   }
   .main .main-link .user {
     flex-wrap: wrap;
@@ -1981,33 +1980,34 @@ summary:after {
   margin-bottom: 18px;
   font-weight: 400;
 }
-.req-about .now .now-req,
-.req-about .old .old-req {
+.req-about .now .now-req, .req-about .old .old-req {
   display: flex;
   background-color: white;
-  padding: 26px 33px;
+  padding: 22px 12px;
   gap: 20px;
   align-items: center;
   border-radius: 20px;
   margin-bottom: 24px;
   position: relative;
 }
-.req-about .now .now-req .status,
-.req-about .old .old-req .status {
+.req-about .now .now-req .status, .req-about .old .old-req .status {
   position: absolute;
   width: 150px;
   height: 57px;
   font-size: 22px;
   top: 0;
-  left: 8%;
+  display: flex;
+  left: 0;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-top: 14px;
-  background-color: #ae0028;
-  color: white;
-  border-radius: 0px 0px 16px 16px;
+  background-color: #d1680024;
+  color: #D16800;
+  border-radius: 0px 0px 16px 0px;
 }
 .req-about .old .old-req .status {
-  background-color: #06b11d;
+  background-color: #06b11d1f;
+  color: #06B11D;
 }
 .req-about .now .req-info,
 .req-about .old .req-info {
@@ -2015,7 +2015,7 @@ summary:after {
 }
 .req-about .now .req-info h2,
 .req-about .old .req-info h2 {
-  font-size: 24px;
+ font-size: 16px;
   font-weight: 400;
   margin-bottom: 20px;
   margin-top: 28px;
@@ -2028,10 +2028,20 @@ summary:after {
 }
 .req-about .now .req-info .req-num h3,
 .req-about .old .req-info .req-num h3 {
-  font-size: 22px;
+
 }
 .req-about img {
   max-width: 220px;
+}
+.req-about .now .req-info .req-num .price,
+.req-about .old .req-info .req-num .price{
+  color: #AE0028;
+  font-size: 22px;
+}
+.req-about .now .req-info .req-num .price span,
+.req-about .old .req-info .req-num .price span{
+  color: black;
+  font-weight: 300;
 }
 @media (max-width: 1400px) {
   .req-about {
@@ -2417,17 +2427,17 @@ summary:after {
 }
 .pay .pay-data .item1 .pay-info ul li .sm-f {font-size: 14px;
 }
-.pay .pay-data .item1 .pay-info ul li.li-f {
+.pay .pay-data .item1 .pay-info ul li.li-f ,.li-f{
   display: flex;
   align-items: flex-end;
   gap: 10px;
 }
 
-.pay .pay-data .item1 .pay-info ul li h3 {
-  font-size: 25px;
+.pay .pay-data .item1 .pay-info ul li h3,.li-f h3 {
+  font-size: 18px;
   font-weight: 400;
 }
-.pay .pay-data .item1 .pay-info ul li h4 {
+.pay .pay-data .item1 .pay-info ul li h4 ,.li-f h4 {
   font-size: 24px;  
   font-weight: 400;
   color: #ae0028;
