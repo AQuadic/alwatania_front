@@ -1610,6 +1610,22 @@ h1 a {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .tv-about .tv-details h1, .tv-about .tv-details .rev h2 ,.tv-about .tv-details .price h3{
+    font-size: 20px;
+  
+}
+.tv-about .tv-details .price h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+.tv-about .tv-details .tv-dli h3,.tv-about .tv-details .tv-data {
+  font-size: 18px;
+}
+.tv-about .tv-details .tv-data{
+  line-height: 25px;
+}
+}
 /*===============================suport====================*/
 .support {
   margin-bottom: 90px;
@@ -2769,4 +2785,7 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #F28140;
+}
+ol.breadcrumb {
+  padding: 0px 10px;
 }
