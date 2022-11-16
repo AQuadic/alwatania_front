@@ -278,13 +278,17 @@ button.tsok,
   .owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
     display: none;
 }
+.testimonials .item .item-details .add p.salary, .show .item .item-details .add p.salary, .perfect .main-about .item .item-details .add p.salary {
+  font-size: 18px;
+ 
+}
 }
 @media (max-width: 390px) {
   button.tsok,
   .tv-about .tv-details .add-to {
-    width: 80%;
+    width: 70%;
     height: 40px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 620px) {
@@ -299,7 +303,7 @@ button.tsok,
   .alamat h2,
   li.r-title,
   .r-title h3 {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 @media (max-width:580px){
@@ -429,6 +433,7 @@ button.tsok:hover,
   .alamat .logo-company {
     grid-template-columns: repeat(auto-fill, minmax(98px, 125px));
     grid-column-gap: 70px;
+    justify-content: center;
   }
 }
 @media (max-width: 360px) {
@@ -510,7 +515,11 @@ li.r-title {
     justify-content: start;
     gap: 20px;
   }
-
+  .newfooter {
+   
+    padding: 20px 0px 18px;
+  
+}
 }
 @media (max-width: 400px) {
   .r-footer a {
@@ -577,7 +586,8 @@ li.r-title {
 }
 @media (max-width: 445px) {
   .copy h4 {
-    font-size: 20px;
+    font-size: 16px;
+    padding-top: 16px;
   }
   .email input[type="email"] {
    
@@ -717,7 +727,11 @@ section .dropdown {
   border-radius: 0px 0px 10px 10px;
   z-index: 100;
 }
-
+.icon-inner, .ionicon, svg {
+  display: block;
+  height: 94%;
+  width: 94%;
+}
 section .dropdown-inner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 0.2fr));
@@ -797,6 +811,13 @@ section .nav_menu {
 @media (max-width: 512px) {
   section .dropdown-inner {
     grid-template-columns: repeat(auto-fit, minmax(14rem, 0.2fr));
+}
+h3.item-heading {
+  font-size: 20px;
+}
+section .item-list-info a h4 {
+  font-size: 18px;
+  
 }
 }
 .main_search {
@@ -1463,10 +1484,10 @@ h1 a {
     justify-content: center;
   }
   .tv .option .part {
-    width: 35%;
+    width: 30%;
   }
   .tv .option .part img {
-    width: 100%;
+    width: 90%;
   }
 }
 @media (max-width: 535px){
@@ -1475,13 +1496,18 @@ h1 a {
      flex-direction: column; 
      align-items: center; 
 }
+.option {
+  gap: 0px;
+}
 }
 @media (max-width: 440px) {
   .show .all-item .item {
     width: 100%;
     flex: 100%;
   }
-  
+  .tv .container .show {
+    margin-top: 26px; 
+}
 .tv .show .about-product {
   flex-direction: column-reverse;
    flex-wrap: wrap; 
@@ -1489,6 +1515,33 @@ h1 a {
 }
 .tv .show .about-product .sort-product {
    width: 100%; 
+}
+.show h1 {
+  font-size: 22px;
+}
+.accordion .link {
+ 
+  padding: 12px;
+  
+  font-size: 16px;
+ 
+}
+.tv .form-check .form-check-input {
+ 
+  height: 24px;
+  width: 24px;
+ 
+}
+.tv .show .about-product .unm-product h2 {
+  font-size: 20px;
+}
+.show .show-more button {
+  width: 210px;
+  height: 54px;
+  font-size: 24px;
+}
+.show .show-line h3 {
+  font-size: 16px;
 }
     }
     /*====================================================start tv product =========================*/
@@ -1514,7 +1567,7 @@ h1 a {
 @media(max-width:772px){
   .tv ol.breadcrumb,
 .tv-product ol.breadcrumb ,.tv .breadcrumb-item.active, .tv-product .breadcrumb-item.active {
-  font-size:18px;
+  font-size:16px;
   
   
 }
@@ -1656,18 +1709,24 @@ h1 a {
 }
 @media (max-width: 500px) {
   .tv-about .tv-details h1, .tv-about .tv-details .rev h2 ,.tv-about .tv-details .price h3{
-    font-size: 20px;
+    font-size: 18px;
   
 }
 .tv-about .tv-details .price h2 {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
 }
 .tv-about .tv-details .tv-dli h3,.tv-about .tv-details .tv-data {
-  font-size: 18px;
+  font-size: 16px;
+  margin: 8px auto 16px;
 }
 .tv-about .tv-details .tv-data{
   line-height: 25px;
+}
+.tv-about .tv-details .add-del, .basket .add-del {
+  width: 154px;
+  height: 34px;
+  padding: 0px 14px;
 }
 }
 /*===============================suport====================*/
@@ -1728,18 +1787,23 @@ h1 a {
 }
 @media (max-width: 580px) {
   .support h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
   .support .about {
     margin-top: 40px;
+    gap: 20px;
   }
   .support .about img {
-    width: 85px;
+    width: 70px;
   }
   .support .about h3,
   .support .about a {
-    font-size: 22px;
+    font-size: 18px;
   }
+  .support {
+    margin-bottom: 46px;
+    padding-top: 25px;
+}
 }
 /*===================================start collaps-tv===============================*/
 
@@ -1821,7 +1885,7 @@ summary:after {
   content: "➖";
 }
 .collaps-tv {
-  padding: 150px 0px 80px;
+  padding: 70px 0px 80px;
 }
 @media(max-width:400px){
   summary {
@@ -1829,6 +1893,9 @@ summary:after {
     font-size: 18px;
     padding: 20px 50px;
   
+}
+.collaps-tv {
+  padding: 40px 0px 40px;
 }
 }
 /*====================================================start main page ============================*/
@@ -1980,6 +2047,25 @@ summary:after {
   .main .main-link .user {
     flex-wrap: wrap;
   }
+  .main .main-link .logout {
+    font-size: 16px;
+}
+.main .main-link ul li a h2 {
+  font-size: 14px;
+ 
+}
+.main .main-about .part h2 {
+  font-size: 18px;
+}
+.main .main-about .part p {
+  font-size: 16px;
+  
+}
+.main .main-about .part button {
+  width: 170px;
+  height: 44px;
+  font-size: 18px;
+}
 }
 /*====================================================end main page ============================*/
 /*====================================================sart perfect  ============================*/
@@ -2239,7 +2325,7 @@ summary:after {
   gap: 20px;
 }
 .basket .my-basket .all-basket .all-item .item img {
-  width: 35%;
+  width: 32%;
   max-width: 150px;
 }
 .basket .my-basket .all-basket .all-item .item .item-about {
@@ -2347,6 +2433,7 @@ summary:after {
   border: none;
   border-radius: 16px;
   margin-bottom: 40px;
+  box-shadow: 0px 0px 6px #0000004a;
 }
 .basket .my-basket .summer-basket ul li .checkout {
   font-size: 16px;
@@ -2387,6 +2474,7 @@ summary:after {
   }
   .basket .my-basket .all-basket .all-item .item .item-about {
    flex-direction: column;
+   align-items: end;
 }
 }
 @media (max-width: 550px) {
@@ -2418,9 +2506,9 @@ summary:after {
     .item-about
     .price-num
     .add-del {
-    width: 150px;
-    height: 40px;
-    padding: 0px 15px;
+      width: 140px;
+      height: 32px;
+      padding: 0px 14px;
   }
   .basket .my-basket .summer-basket {
     min-width: 100%;
@@ -2429,24 +2517,36 @@ summary:after {
 @media (max-width: 400px) {
   .basket .my-basket .summer-basket ul li h3,
   .basket .my-basket .summer-basket ul li h4 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
   }
+  .basket .my-basket .summer-basket .coun-pay {
+   
+    width: 75%;
+    margin-top: 26px;
+    height: 52px;
+    margin-bottom: 22px;
+    font-size: 20px;
+   
+}
+.basket .my-basket .summer-basket ul li {
+  
+  margin-bottom: 12px;
+  
+}
   .basket .my-basket .summer-basket ul li.total h3,
   .basket .my-basket .summer-basket ul li.total h4 {
-    font-size: 26px;
+    font-size: 20px;
   }
   .basket .my-basket .summer-basket ul li.code-res {
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
   }
   .basket .my-basket .summer-basket h2 {
-    font-size: 22px;
+    font-size: 20px;
 }
 .basket .my-basket .summer-basket {
- 
-  padding: 8px;
- 
+  padding: 20px 10px;
 }
 }
 /*====================================================end basket  ============================*/
@@ -2701,19 +2801,18 @@ summary:after {
 }
 @media (max-width: 440px) {
   .pay .pay-data .item1 {
-   
-    flex-direction: column;
-    align-items: center;
+    padding: 14px 14px;
+  
 }
   .pay .pay-data .item1 img {
-    max-width: 110px;
+    max-width: 100px;
   }
   .pay .pay-data .item1 .pay-info h2,
   .pay .pay-data .item1 .pay-info ul li h3,
   .pay .pay-data .item1 .pay-info ul li h4,
   .pay .pay-data .item2 ul li h3,
   .pay .pay-data .item2 ul li h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .pay .item4 .pay-card .form-check .choose-pay label,
   .pay .item4 .pay-cash .form-check label {
@@ -2727,17 +2826,53 @@ summary:after {
     padding: 15px 11px;
   }
   .pay .item4 .pay-card .pay-info1 h2 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 6px;
   }
   .pay .pay-data .order-now,
   .pay .add-card {
-    width: 85%;
+    width: 60%;
+    height: 54px;
+    font-size: 22px;
   }
   .pay .pay-data .item2 {
     padding: 16px;
 }
 .pay .pay-user .item3 {
-  padding: 25px 15px 30px 15px;
+  padding: 16px;
+}
+.h1-step {
+ 
+  font-size: 20px;
+}
+.pay {
+  padding-top: 10px;
+ 
+}
+.pay .pay-data h1 {
+  font-size: 20px;
+  
+}
+.pay .pay-user h2 {
+  font-size: 22px;
+ 
+}
+.pay .pay-user .item3 .user-name h2 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.pay .pay-user .item3 .ads,.pay .pay-user .item3 .phone {
+  font-size: 16px;
+ 
+}
+.pay .item4 .pay-card .pay-info1 form input::placeholder{
+  font-size: 16px;
+}
+.pay .item4 .pay-card .pay-info1 form input {
+ 
+  height: 50px;
+ 
+  
 }
 }
 /*====================================================end pay-steps  ============================*/
