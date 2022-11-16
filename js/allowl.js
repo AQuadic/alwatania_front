@@ -18,10 +18,10 @@
                   navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
-                            items: 1
+                            items: 1.3
                         },
                         300: {
-                            items: 1.2
+                            items: 1.5
                         },
                         525: {
                             items: 1.5
@@ -57,10 +57,10 @@
                     navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
-                            items: 1
+                            items: 1.3
                         },
                         325: {
-                            items: 1.2
+                            items: 1.5
                         },
                         425: {
                             items: 1.5
@@ -95,7 +95,7 @@
                     navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
-                            items: 1
+                            items: 1.5
                         },
                         425: {
                             items: 1.5
@@ -127,7 +127,7 @@
                     navText: [' <img src="./images/ic_trending_flat_24px.svg" alt="">','   <img src="./images/ic_trending_r.svg" alt=""> '],
                     responsive: {
                         0: {
-                            items: 1
+                            items: 1.5
                         },
                         425: {
                             items: 1.5

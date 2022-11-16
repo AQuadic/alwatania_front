@@ -38,7 +38,7 @@ header .container img {
 }
 header .container .conact {
   display: flex;
-  gap: 10px;
+  gap: 6px;
 }
 header .container .conact img {
 }
@@ -49,13 +49,16 @@ header h2 {
   font-weight: 400;
   margin: 0;
 }
-
+img#change-lang {
+  max-width: 30px;
+  padding: 5px;
+}
 @media (max-width: 750px) {
   header {
     height: 75px;
   }
   header .container {
-    gap: 15px;
+    gap: 24px;
     padding: 20px;
   }
 }
@@ -63,11 +66,17 @@ header h2 {
   header h2 {
     font-size: 14px;
   }
+  header {
+    height: 44px;
+}
+header .container {
+  padding: 8px;
+}
 }
 
 /*end header*/
 .section {
-  margin: 85px auto;
+  margin: 36px auto 50px;
 }
 .section .container {
 }
@@ -118,12 +127,19 @@ li.r-title,
     max-width: 225px;
   }
   .section .container .allimage {
-    gap: 20px;
+    gap: 16px;
   }
 }
 @media (max-width: 502px) {
   .section .container .allimage .part {
-    max-width: 280px;
+    max-width: 146px;
+  }
+  .section .container .allimage .part h1 {
+   
+    font-size: 20px;
+}
+  .section {
+    margin: 20px auto 36px;
   }
 }
 /*start owl1 */
@@ -258,6 +274,11 @@ button.tsok,
     left: calc(100% - 30px);
   }
 }
+@media (max-width: 450px) {
+  .owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+    display: none;
+}
+}
 @media (max-width: 390px) {
   button.tsok,
   .tv-about .tv-details .add-to {
@@ -352,7 +373,7 @@ button.tsok:hover,
 }
 @media (max-width: 770px) {
   .app .container {
-    top: 12%;
+    top: 16%;
     padding: 0px 20px;
  
 }
@@ -363,7 +384,7 @@ button.tsok:hover,
   margin-left: 10px;
   width: 49%;
   display: inline-block;
-  margin: auto;
+  padding-bottom: 10px;
 }
 }
 @media (max-width: 550px) {
@@ -373,7 +394,7 @@ button.tsok:hover,
   margin-bottom: 12px;
 }
 .app .container h3 {
-  font-size: 16px;
+  font-size: 12px;
 }
 .app .container .logostor {
   margin-top: 16px; 
@@ -381,7 +402,7 @@ button.tsok:hover,
 }
 @media (max-width: 370px) {
   .app .container {
-    top: 8%;
+    top: 16%;
     padding: 0px 11px;
 }
 }
@@ -421,7 +442,7 @@ button.tsok:hover,
 /*new footer*/
 .newfooter {
   background: linear-gradient(119deg, #ae0028, #faa451);
-  padding: 50px 0px 42px;
+  padding: 36px 0px 36px;
   color: white;
 }
 
@@ -447,7 +468,7 @@ span.recolor {
 .l-footer h4 {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 p.footer-links {
   display: flex;
@@ -489,6 +510,19 @@ li.r-title {
     justify-content: start;
     gap: 20px;
   }
+
+}
+@media (max-width: 400px) {
+  .r-footer a {
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+li.r-title {
+  font-size: 16px;
+}
+.l-footer h4 {
+  font-size: 14px;
+}
 }
 .email {
   position: relative;
@@ -528,7 +562,7 @@ li.r-title {
   align-items: center;
 }
 .imagestore img {
-  width: 92%;
+  width: 82%;
   margin-bottom: 10px;
 }
 /*end footer*/
@@ -545,6 +579,14 @@ li.r-title {
   .copy h4 {
     font-size: 20px;
   }
+  .email input[type="email"] {
+   
+    height: 50px;
+  
+  }
+  .email {
+    max-width: 270px;
+}
 }
 
 /* start big nav */
@@ -624,9 +666,10 @@ section .btn {
 }
 
 section .btn h2 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #AE0028;
+  margin: 0;
 }
 section .nav_link {
   font-size: 18px;
