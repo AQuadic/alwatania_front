@@ -1560,7 +1560,7 @@ h1 a {
       background-color: #faa35117;
     }
     .bg-t{
-      padding-bottom: 50px;
+      padding-bottom: 40px;
     }
     .tv-product .container {
     
@@ -1602,7 +1602,7 @@ h1 a {
   width: 100%;
 }
 .tv-about .tv-image .sm-image {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .tv-about .tv-image .sm-image ul {
   display: flex;
@@ -1719,7 +1719,7 @@ h1 a {
 }
 @media (max-width: 992px) {
   .tv-about {
-    gap: 60px;
+    gap: 40px;
     flex-direction: column;
   }
 }
