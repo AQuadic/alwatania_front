@@ -135,7 +135,7 @@
                         </ul>
                 
             </div>
-            <button class="order-now">اطلب الان</button>
+            <button class="order-now" id="order-now">اطلب الان</button>
         </div>
         <div class="pay-user" data-aos="fade-down">
                <h2>عنوان الشحن</h2>
@@ -293,7 +293,10 @@
     <script>
       AOS.init();
 const lang_ch = document.getElementById("change-lang");
-
+const bt = document.getElementById("order-now");
+bt.onclick=()=>{
+  alert("تمت عمليه الطلب بنجاح");
+}
 lang_ch.onclick=()=>{
     if(document.dir==="rtl"){
       document.dir="ltr";
