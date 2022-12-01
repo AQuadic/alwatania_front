@@ -438,6 +438,7 @@
     </section>
     <!--end big nav -->
     <!--start tv product-->
+    <form action="">
     <div class="tv-product">
       <div class="container">
         <nav
@@ -494,9 +495,11 @@
             </div>
             <div class="tv-dli"><h3>الشحن خلال 3 الي 7 ايام</h3></div>
             <div class="add-del">
-              <button class="tv-del" id="tv-del">-</button>
-              <h4 class="num-tv" id="num-tv">1</h4>
-              <button class="tv-add" id="tv-add">+</button>
+              <button class="tv-del" type="button" id="tv-del">-</button>
+              <input type="number"  class="num-tv" id="num-tv" readonly  value=1>
+              
+              
+              <button class="tv-add" type="button" id="tv-add">+</button>
             </div>
             <span class="line-tv"></span>
             <h2 class="tv-data">
@@ -508,13 +511,15 @@
               ضمان مجاني لمدة سنتين
             </h2>
             <span class="line-tv"></span>
-            <a href="basket.html"
-              ><button class="add-to">اضف الي السلة</button></a
-            >
+            <a href="basket.html">
+              <button class="add-to" type="submit">اضف الي السلة</button>
+
+              </a>
           </div>
         </div>
       </div>
     </div>
+  </form>
     <!--end tv product-->
 
     <!-- start collaps -->
@@ -734,17 +739,19 @@
               </li>
               <li>
                 <h4>تابع اخر العروض والخصومات</h4>
-                <div class="email">
-                  <input
-                    type="email"
-                    name=""
-                    placeholder="البريد الالكتروني"
-                    id=""
-                  />
-                  <button type="submit">
-                    <img src="./images/Path 52.svg" alt="" />
-                  </button>
-                </div>
+                <form action="">
+                  <div class="email">
+                    <input
+                      type="email"
+                      name=""
+                      placeholder="البريد الالكتروني"
+                      id=""
+                    />
+                    <button type="submit">
+                      <img src="./images/Path 52.svg" alt="" />
+                    </button>
+                  </div>
+                </form>
               </li>
               <li class="imagestore">
                 <a href="#"
@@ -797,23 +804,28 @@
     <script>
       var del = document.getElementById("tv-del");
       const add = document.getElementById("tv-add");
+      const val =  document.getElementById("num-tv").value;
+      console.log(val)
+       console.log(document.getElementById("num-tv"))
       var num = 1;
-      console.log(typeof num);
+      console.log(typeof val);
 
       del.addEventListener("click", function () {
         if (num <= 1) {
-          document.getElementById("num-tv").innerHTML = 1;
+          num = 1;
+         
         } else {
           num--;
+
         }
-        document.getElementById("num-tv").innerHTML = num;
+        document.getElementById("num-tv").value=num
       });
 
       add.addEventListener("click", function () {
         num += 1;
-
-        document.getElementById("num-tv").innerHTML = num;
+        document.getElementById("num-tv").value=num
       });
+      val=num
     </script>
 
     <script

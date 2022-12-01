@@ -437,6 +437,7 @@
     <div class="container">
         <h1>السلة (2)</h1>
         <div class="my-basket">
+          <form action="">
             <div class="all-basket">
                 <div class="all-item">
                     <div class="item">
@@ -447,9 +448,9 @@
                             55u9761AE</h2>
                             <div class="price-num">
                                 <div class="add-del">
-                                    <button class="tv-del" id="tv-del">-</button>
-                                    <h4 class="num-tv" id="num-tv">1</h4>
-                                    <button class="tv-add" id="tv-add">+</button>
+                                    <button class="tv-del" type="button" id="tv-del">-</button>
+                                    <input type="number"  class="num-tv" id="num-tv" readonly value=1>
+                                    <button class="tv-add" type="button" id="tv-add">+</button>
                   
                                   </div>
                                 <h3 class="price">20,340 ج م</h3>
@@ -457,11 +458,11 @@
                        </div>
                     </div>
                     <div class="end-basket">
-                        <button class="addto-fi">
+                        <button class="addto-fi" type="submit">
                             <img src="./images/Group 36.svg" alt="">
                             <h3>اضف الي المفضلة</h3>
                         </button>
-                        <button class="delet-item">
+                        <button class="delet-item" type="submit">
                             <img src="./images/Group 401.svg" alt="">
                             <h4>مسح المنتج</h4>
                         </button>
@@ -469,6 +470,8 @@
                 </div>
                 
             </div>
+          </form>
+           <form action="">
             <div class="summer-basket">
                 <h2>ملخص الطلب</h2>
                 <ul>
@@ -489,7 +492,7 @@
 
 
                         </div>
-                        <button class="checkout">تطبيق</button>
+                        <button class="checkout" type="submit">تطبيق</button>
                     </li>
                     <li><span class="line"></span></li>
                     <li class="total">
@@ -497,8 +500,9 @@
                         <h4>20,340 ج م</h4>
                     </li>
                 </ul>
-                <a href="pay-steps.html"><button class="coun-pay">الاستمرار للدفع</button></a>
+                <a href="pay-steps.html"><button type="submit"  class="coun-pay">الاستمرار للدفع</button></a>
             </div>
+          </form>
         </div>
     </div>
 </div>
@@ -522,10 +526,19 @@
               <h4>
                 تابع اخر العروض والخصومات
               </h4>
-              <div class="email">
-                <input type="email" name="" placeholder="البريد الالكتروني" id="">
-                <button type="submit"><img src="./images/Path 52.svg" alt=""></button>
-              </div>
+              <form action="">
+                <div class="email">
+                  <input
+                    type="email"
+                    name=""
+                    placeholder="البريد الالكتروني"
+                    id=""
+                  />
+                  <button type="submit">
+                    <img src="./images/Path 52.svg" alt="" />
+                  </button>
+                </div>
+              </form>
             
             </li>
             <li class="imagestore">
@@ -591,37 +604,30 @@
   <script>
     var del = document.getElementById("tv-del");
     const add = document.getElementById("tv-add");
-    var num =1 ;
-    console.log(typeof(num))
-   
-    
-      
-        del.addEventListener("click",function(){
-          if(num <= 1){
-            document.getElementById("num-tv").innerHTML=1
-          }
-          else {
-            num--
-          }
-          document.getElementById("num-tv").innerHTML=num;  
-        })
-        
-   
-   add.addEventListener('click',function(){
-      num+=1
-    
-      document.getElementById("num-tv").innerHTML=num;
-    })
-      
-    
-     
-    
-  
-   
-    
-   
-    
-        </script>
+    const val =  document.getElementById("num-tv").value;
+    console.log(val)
+     console.log(document.getElementById("num-tv"))
+    var num = 1;
+    console.log(typeof val);
+
+    del.addEventListener("click", function () {
+      if (num <= 1) {
+        num = 1;
+       
+      } else {
+        num--;
+
+      }
+      document.getElementById("num-tv").value=num
+    });
+
+    add.addEventListener("click", function () {
+      num += 1;
+      document.getElementById("num-tv").value=num
+    });
+    val=num
+  </script>
+
     
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
