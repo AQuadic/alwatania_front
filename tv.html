@@ -23,8 +23,11 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
   </head>
   <body>
+  
+    <div class="multi-range-slider"></div>
     <!-- Navbar -->
     <header class="header">
       <div class="container">
@@ -453,7 +456,8 @@
         </nav>
         <div class="option">
           <div class="part">
-            <img src="./images/22.svg" alt="" />
+          <div class="part_img"> <img src="./images/22.svg" alt="" /></div>
+           
             <h2>تليفزيونات</h2>
           </div>
           <div class="part">
@@ -472,15 +476,26 @@
             <ul id="accordion" class="accordion">
               <li>
                 <div class="link">السعر <i class="fa fa-chevron-down"></i></div>
-                <ul class="submenu">
+                <ul  class="submenu">
                   <li>
-                    <input type="range" class="form-range" value="0" step="50" s min="0" max="30000" id="customRange1">
+                    <div class="range">
+                      <div class="range-slider">
+                        <span class="range-selected" id="selectedd"></span>
+                      </div>
+                      <div class="range-input">
+                        <input type="range" class="min" min="0" max="30000" value="0" step="10">
+                        <input type="range" class="max" min="0" max="30000" value="0" step="10">
+                      </div>
+                      <div class="range-price">      
+                        <label for="min">Min</label>
+                        <input type="number" name="min" value="0">      
+                        <label for="max">Max</label>
+                        <input type="number" name="max" value="0">      
+                      </div>
+                    </div> 
+                    
                   </li>
-                <li >
-
-<p id="valuerang"> 0</p>
-<p>30000</p> 
-                </li>
+              
               
                 </ul>
               </li>
@@ -719,6 +734,7 @@
                 </ul>
               </li>
             </ul>
+            <input type="submit" class="apply" />
           </div>
           <div class="products">
             <div class="about-product">
@@ -998,8 +1014,43 @@
   </div>
 
   <!--end foter-->
+<script >
+  let rangeMin = 100;
+const range = document.querySelector(".range-selected");
+const rangeInput = document.querySelectorAll(".range-input input");
+const rangePrice = document.querySelectorAll(".range-price input");
+rangeInput.forEach((input) => {
+input.addEventListener("input", (e) => {
+  let minRange = parseInt(rangeInput[0].value);
+  let maxRange = parseInt(rangeInput[1].value);
+  if (maxRange - minRange < rangeMin) {     
+    if (e.target.className === "min") {
+      rangeInput[0].value = maxRange - rangeMin;        
+      console.log(   rangeInput[0].value)     
 
-<script src="./js/card.js"></script>
+    } else {
+      rangeInput[1].value = minRange + rangeMin;   
+      console.log(  rangeInput[1].value)     
+    }
+  } else {
+    rangePrice[0].value = minRange;
+    rangePrice[1].value = maxRange;
+  
+    range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+    range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
+  }
+});
+});
+rangePrice.forEach((input) => {
+input.addEventListener("input", (e) => {
+  let minPrice = rangePrice[0].value;
+  let maxPrice = rangePrice[1].value;
+ 
+});
+});
+
+  </script>
+
     
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -1025,6 +1076,43 @@ lang.onclick=()=>{
     else {
       document.dir="rtl"
     }
+}
+function getd (paramsname){
+  let params = new URLSearchParams(window.location.search)
+ 
+return params.get(paramsname)
+}
+console.log(getd("gol"))
+</script>
+
+
+
+
+
+  
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="./js/allowl.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+   
+
+const lang = document.getElementById("change-lang");
+
+
+
+lang.onclick=()=>{
+  if(document.dir==="rtl"){
+    document.dir="ltr";
+   
+  }
+  else {
+    document.dir="rtl";
+  }
+ 
 }
 
 </script>

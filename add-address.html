@@ -97,10 +97,10 @@
             <h1 class="name-user">amira eslam</h1>
             <h2 class="email-user">amiraeslam345@gmail.com </h2>
         </div>
-        <a href="forms.html" class="user-update"><img src="./images/edit (2).svg" alt=""></a>
+        <a href="forms.html" class="user-update"><img src="./images/edit (1).svg" alt=""></a>
     </div>
     <ul>
-        <li ><a href="main.html">
+        <li><a href="main.html">
             <img src="./images/Path 2622.svg" alt="">
             <h2>الرئيسية</h2>
         </a></li>
@@ -109,47 +109,63 @@
             <h2>طلباتي</h2>
         </a></li>
         <li><a href="perfect.html">
-            <img src="./images/ic_fav.svg" alt="">
+            <img src="./images/ic_favorite.svg" alt="">
             <h2>منتجاتي المفضلة</h2>
         </a></li>
-        <li><a href="address.html">
-          <img src="./images/Icon material-location-on.svg" alt="">
-            <h2> العناوين</h2>
-        </a></li>
+        <li class="link-activ"><a href="address.html">
+            <img src="./images/Icon material-location-on2.svg" alt="">
+              <h2> العناوين</h2>
+          </a></li>
     </ul>
     <a href="login.html" class="logout">تسجيل الخروج</a>
 </div>
 <div class="main-about">
     <form class="row g-3">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <label for="inputEmail4" class="form-label">الاسم الاول</label>
           <input type="text" placeholder="اكتب اسمك" class="form-control" id="inputname">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <label for="inputEmail4" class="form-label">اسم العائلة</label>
             <input type="text" placeholder="اكتب اللقب" class="form-control" id="inputname">
           </div>
-      
-          <div class="col-md-12 information">
-            <h2>البريد الالكترونى</h2>
-            <ul>
-             <li>amiraelsayed521@gmail.com</li>
-             <li class="change-info"   ><a href="email-change.html">  تغيير البريد الالكترونى </a></li>
- 
-            </ul>
-           </div>
-           <div class="col-md-12 information">
-             <h2>كلمة المرور </h2>
-             <ul>
-              <li>**************</li>
-              <li class="change-info"> <a href="pass-change.html">تغيير كلمة المرور</a> </li>
-  
-             </ul>
-            </div>
-            <button class="col-md-12 col-12 " style="margin: 100px 0px 20px;">حفظ</button>
+        <div class="col-md-4">
+            <label for="inputEmail4" class="form-label">رقم الهاتف</label>
+     
+            <input type="tel" placeholder="اكتب رقم الهاتف" class="form-control" id="inputname" pattern="^01[0-2]\d{1,8}$">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">المحافظة</label>
+            <input type="text" placeholder="اكتب المحافظة" class="form-control" id="inputname">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">المنطقة</label>
+            <input type="text" placeholder="اكتب المنطقة" class="form-control" id="inputname">
+          </div>
+        <div class="col-md-10">
+          <label for="inputCity" class="form-label">العنوان</label>
+          <input type="text" placeholder="اكتب اسم او رقم الشارع او معلم قريب" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-3">
+            <label for="inputEmail4" class="form-label"> رقم المبني</label>
+            <input type="text" placeholder=" اكتب رقم" class="form-control" id="inputname">
+          </div>
+          <div class="col-md-3">
+            <label for="inputEmail4" class="form-label"> رقم الدور</label>
+            <input type="text" placeholder=" اكتب رقم" class="form-control" id="inputname">
+          </div>
+          <div class="col-md-3">
+            <label for="inputEmail4" class="form-label">  رقم الشقة</label>
+            <input type="text" placeholder=" اكتب رقم" class="form-control" id="inputname">
+          </div>
+        <div class="col-12">
+          <button type="submit" class="btn ">حفظ العنوان </button>
+        </div>
+        <div class="col-12">
+            <a href="#">الغاء</a>
+          </div>
       </form>
 </div>
-
     </div>
 </div>
 <!--end main page-->

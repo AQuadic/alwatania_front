@@ -30,7 +30,7 @@
     <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="">
     <h2>الدعم والمساعدة</h2>
 </div>
-<a href="contact.html">تواصل معنا</a>
+<h2>تواصل معنا</h2>
 
         </div>
 </header>
@@ -99,8 +99,8 @@
         <a href="forms.html" class="user-update"><img src="./images/edit (1).svg" alt=""></a>
     </div>
     <ul>
-        <li class="link-activ"><a href="main.html">
-            <img src="./images/Path 262.svg" alt="">
+        <li ><a href="main.html">
+            <img src="./images/Path 2622.svg" alt="">
             <h2>الرئيسية</h2>
         </a></li>
         <li><a href="request.html">
@@ -111,38 +111,81 @@
           <img src="./images/ic_fav.svg" alt="">
             <h2>منتجاتي المفضلة</h2>
         </a></li>
-        <li><a href="address.html">
-          <img src="./images/Icon material-location-on.svg" alt="">
+        <li class="link-activ"><a href="address.html">
+          <img src="./images/Icon material-location-on2.svg" alt="">
             <h2> العناوين</h2>
         </a></li>
     </ul>
     <a href="login.html" class="logout">تسجيل الخروج</a>
 </div>
 <div class="main-about">
-    <h1>مرحبا ابراهيم</h1>
-    <div class="part">
-        <h2>احدث طلب</h2>
-        <p>ليس لديك أي طلبات سابقة , تسوق الان وتتبع طلباتك بسهولة</p>
-        <button>تسوق الان</button>
-    </div>
+    
     <div class="part">
         <h2> عنوان التوصيل</h2>
-        <p>ليس لديك أي عناوين مسجلة, يمكنك إضافة عنوان لسرعة وسهولة عملية الشرا</p>
-        <button> اضافة عنوان</button>
+     <p>ليس لديك أي عناوين مسجلة, يمكنك إضافة عنوان لسرعة وسهولة عملية الشرا</p>
+        <button>أضف عنوان </button>
     </div>
+    <a>
+      <div class="part double-part " >
+        <div class="part1">
+             <h2> العنوان </h2>
+        <ul>
+            <li>
+                <p>الاسم</p>
+                <h3>Amira El sayed</h3>
+            </li>
+            <li>
+                <p>العنوان</p>
+                <h3>66 شارع الشهيد محمد يوسف غالى</h3>
+            </li>
+            <li>
+                <p>رقم الهاتف</p>
+                <h3>201578514852+</h3>
+            </li>
+        </ul>
+        </div>
+        <div class="part2">
+            <input type="button" class="update" value="تعديل"/>
+            <input type="button" class="delete" value="حذف"/>
+
+        </div>
+      
+    
+      
+    </div>
+    </a>
+    <div class="part double-part active_ad">
+      <div class="part1">
+           <h2> العنوان </h2>
+      <ul>
+          <li>
+              <p>الاسم</p>
+              <h3>Amira El sayed</h3>
+          </li>
+          <li>
+              <p>العنوان</p>
+              <h3>66 شارع الشهيد محمد يوسف غالى</h3>
+          </li>
+          <li>
+              <p>رقم الهاتف</p>
+              <h3>201578514852+</h3>
+          </li>
+      </ul>
+      </div>
+      <div class="part2">
+          <input type="button" class="update" value="تعديل"/>
+          <input type="button" class="delete" value="حذف"/>
+
+      </div>
+    
+  
+    
+  </div>
+    <a href="add-address.html" class="a-btn">أضف عنوان</a>   
 </div>
     </div>
 </div>
 <!--end main page-->
-
-
-
-
-
-
-
-
-
 
   <!--footer-->
   <div class="newfooter " >
@@ -220,11 +263,89 @@
 
 
 
+  <div class="main ">
+    <div class="container">
+        <div class="main-link">
+            <div class="user">
+                <div class="user-info">
+                    <h1 class="name-user">{{auth()?->user()->first_name}}</h1>
+                    <h2 class="email-user"> {{auth()?->user()->email}}</h2>
+                </div>
+                <a href="{{route('updateProfile')}}" class="user-update"><img
+                        src="{{asset('frontend/images/edit (1).svg')}}" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="{{route('home')}}">
+                        <img src="{{asset('frontend/images/Path 262.svg')}}" alt="">
+                        <h2>{{__('web.home')}}</h2>
+                    </a></li>
+                <li><a href="{{route('request')}}">
+                        <img src="{{asset('frontend/images/ic_view_list_24px.svg')}}" alt="">
+                        <h2>{{__('web.my_orders')}}</h2>
+                    </a></li>
+                <li><a href="{{route('perfect')}}">
+                        <img src="{{asset('frontend/images/ic_fav.svg')}}" alt="">
+                        <h2>{{__('web.favourites')}}</h2>
+                    </a></li>
+                <li class="link-activ"><a href="{{route('address')}}">
+                        <img src="{{asset('frontend/images/Icon material-location-on2.svg')}}" alt="">
+                        <h2> العناوين</h2>
+                    </a></li>
+            </ul>
+            <a href="{{route('login')}}" class="logout">{{__('web.log_out')}}</a>
+        </div>
 
+            <div class="main-about">
+                @forelse(auth()->user()->addresses as $address)
+                <a href="{{route('pay')}}">
+                    <div class="part double-part" id="selectedAddress" >
 
+                        <div class="part1">
+                            <h2> العنوان </h2>
+                            <ul>
+                                <li>
+                                    <p>الاسم</p>
+                                    <h3>{{$address->name.' '.$address->family_name}}</h3>
+                                </li>
+                                <li>
+                                    <p>العنوان</p>
+                                    <h3>{{$address->street_name}}</h3>
+                                </li>
+                                <li>
+                                    <p>رقم الهاتف</p>
+                                    <h3>{{$address->phone}}</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="part2">
 
+                            <a href="{{route('updateaddress',['id'=>$address->id])}}">
+                                <input type="submit" class="update" value="تعديل"/>
+                            </a>
 
+                            <form method="post" action="{{ route('delete_address', $address->id) }}"
+                                  class="m-0">
+                                @csrf
+                                <input type="submit" class="delete" value="حذف"/>
+                            </form>
+                        </div>
+                    </div>
 
+                </a>
+
+                @empty
+                    <div class="part">
+                        <h2> عنوان التوصيل</h2>
+                        <p>ليس لديك أي عناوين مسجلة, يمكنك إضافة عنوان لسرعة وسهولة عملية الشرا</p>
+                        <a href="{{route('forms')}}">
+                            <button>أضف عنوان</button>
+                        </a>
+                    </div>
+                @endforelse
+            </div>
+
+    </div>
+    </div>
 
 
 
@@ -253,6 +374,18 @@ lang.onclick=()=>{
    
 }
 
+const freeclass = document.querySelectorAll('.double-part');
+for(var i=0;i<freeclass.length;i++){
+    freeclass[i].addEventListener('click', (e)=>{
+      if(e.target.classList.contains("active_ad")){
+        freeclass.forEach(function(el) {
+    el.classList.remove('active_ad');
+  });
+  e.target.classList.add('active_ad');
+      }
+      
+    });
+}
 </script>
   </body>
 </html>

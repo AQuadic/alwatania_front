@@ -1,7 +1,4 @@
-
-
-   
-        /*owl one*/ 
+  /*owl one*/ 
 
         jQuery(document).ready(function($) {
             "use strict";
@@ -185,3 +182,6 @@
                 var accordion = new Accordion($('#accordion'), false);
               });
          
+       
+
+             
