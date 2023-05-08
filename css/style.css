@@ -133,7 +133,7 @@ li.r-title,
 .section .container .allimage .part img {
   width: 100%;
   transition: 0.3s;
-  height: 250;
+  height: 250px;
 }
 .section .container .allimage .part h1 {
   font-weight: 400;
