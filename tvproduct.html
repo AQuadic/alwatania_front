@@ -463,13 +463,13 @@
         <div class="tv-about">
           <div class="tv-image" data-aos="zoom-in">
             <div class="big-image">
-              <img src="./images/222.svg" alt="tv-image" />
+              <img src="./images/222.svg" id="img_show" alt="tv-image" />
             </div>
             <div class="sm-image">
               <ul>
-                <li><img src="./images/223.svg" alt="" /></li>
-                <li><img src="./images/224.svg" alt="" /></li>
-                <li><img src="./images/225.svg" alt="" /></li>
+                <li><img src="./images/223.svg" class="def_img" alt="" /></li>
+                <li><img src="./images/224.svg" class="def_img" alt="" /></li>
+                <li><img src="./images/225.svg" class="def_img" alt="" /></li>
               </ul>
             </div>
           </div>
@@ -909,6 +909,14 @@
           document.dir = "rtl";
         }
       };
+      const img_show = document.getElementById("img_show")
+      const def_img = document.getElementsByClassName("def_img")
+       const ahmed = function  (){
+      img_show.src =this.src
+    }
+    for(i=0 ; i<=def_img.length ; i++){
+      def_img[i].addEventListener("click",ahmed)
+    }
     </script>
   </body>
 </html>

@@ -4,6 +4,24 @@
   box-sizing: border-box;
   font-family: "Dubai";
 }
+@font-face {
+  font-family: "Dubaib";
+  src: url("../webfonts/DubaiW23-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dubai";
+  src: url("../webfonts/DubaiW23-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dubair";
+  src: url("../webfonts/DubaiW23-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
 p {
   margin: 0;
 }
@@ -94,7 +112,6 @@ li.r-title,
 .r-title h3 {
   font-size: 28px;
   font-weight: bold;
-
   margin-bottom: 24px;
 }
 
@@ -116,6 +133,7 @@ li.r-title,
 .section .container .allimage .part img {
   width: 100%;
   transition: 0.3s;
+  height: 250;
 }
 .section .container .allimage .part h1 {
   font-weight: 400;
@@ -146,6 +164,9 @@ li.r-title,
   }
   .section {
     margin: 20px auto 36px;
+  }
+  .section .container .allimage .part img {
+   height: 164px;
   }
 }
 /*start owl1 */
@@ -482,6 +503,7 @@ p.footer-links {
 .r-footer {
   display: flex;
   gap: 90px;
+ 
 }
 
 li.r-title {
@@ -550,6 +572,7 @@ li.r-title {
 }
 .email input[type="email"]::placeholder {
   color: rgb(155, 43, 43);
+  color: #06b11d;
 }
 .email input[type="email"]:focus-visible {
   outline: white 2px solid;
