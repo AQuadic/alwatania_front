@@ -5,26 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-    name="description"
-    content="elwatania home electronics"
-  />
-  <meta name="keywords" content="elwatania,electronics,mobile,Home appliances,refrigerators,Boilers" />
-  <title>Elwatania</title>
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-    
+      name="description"
+      content="elwatania home electronics"
+    />
+    <meta name="keywords" content="elwatania,electronics,mobile,Home appliances,refrigerators,Boilers" />
+    <title>Elwatania</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  
+      <link rel="stylesheet" href="./css/owl.carousel.min.css">
+      <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="./css/all.min.css">
+      <link rel="stylesheet" href="css/style.css" />
    
    
   </head>
   <body>
     
-
-
     <!-- Navbar -->
     <header class="header">
         <div class="container">
@@ -39,61 +36,35 @@
 </header>
 <!--end header-->
 <!--start login page-->
-
-
-
 <div class="page-login">
     <div class="container">
-      <form action="">
-    <div class="form-login">
-<h1>تسجيل الدخول</h1>
-<div class="login-with">
-   <ul>
-    
-    <li><a href="#"><img src="./images/Group 201.svg" alt="google-email"></a></li>
-    <li><a href="#"><img src="./images/Group 203.svg" alt="facebook"></a></li>
-
-   </ul>
-</div>
-<div class="or">
-   <span></span>
-    <h3>او</h3>
-    
-</div>
-
-  <div class="login-email">
-    <h2>البريد الالكتروني</h2>
-    <input type="email" name="" placeholder="اكتب البريد الالكتروني" id="">
-</div>
-<div class="login-pass">
-    <h2> كلمة السر</h2>
-    <input type="password" name="" placeholder="اكتب كلمة السر" id="">
+   
+    <div class="form-login getcount">
+<div class="headform">
+    <a href="login.html"><img src="./images/ic_clear_24px.svg" style="width: 18px;" alt=""></a>
+    <h1>استرجاع الحساب</h1>
 </div>
 
 
-<div class="forget">
-    <ul>
-        <li><a href="getacount.html">هل نسيت كلمة السر</a></li>
-        
-    </ul>
-</div>
-<a href="main.html"><input type="submit"  value="تسجيل الدخول"></a>
-<div class="forget">
-  <ul>
-      
-      <li class="forget-pa"><a href="regster.html">انشاء حساب جديد</a></li>
 
-  </ul>
+<form action="" method="post">
+  <div class="login-name">
+    <h2>رمز التحقق </h2>
+    <input type="text" name="" placeholder="اكتب رمز التحقق  " id="">
 </div>
+
+
+<input type="submit" value="  ارسال خطوات الاسترجاع">
+</form>
+
+<a href="login.html" class="cancle">الغاء</a>
     </div>
-  </form>
     <div class="login-logo">
       <img src="./images/logo png 2-01.svg" class="bigimage" alt="logo alwatania">
       <img src="./images/Group 6.svg" class="imgsmall" alt="logo alwatania">
           </div>
 </div>
 </div>
-
 <!--end login page-->
 
 
@@ -180,24 +151,13 @@
 
 
 
-  <div class="range">
-    <div class="range-slider">
-      <span class="range-selected"></span>
-    </div>
-    <div class="range-input">
-      <input type="range" class="min" min="0" max="30000" value="300" step="10">
-      <input type="range" class="max" min="0" max="30000" value="700" step="10">
-    </div>
-    <div class="range-price">      
-      <label for="min">Min</label>
-      <input type="number" name="min" value="300">      
-      <label for="max">Max</label>
-      <input type="number" name="max" value="700">      
-    </div>
-  </div> 
 
-    
-    <!--Script-->
+
+
+
+
+
+
     
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -206,20 +166,27 @@
       <script src="./js/allowl.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    
     <script>
-     
+    
 
 const lang = document.getElementById("change-lang");
+
+
+ 
+  
 lang.onclick=()=>{
     if(document.dir==="rtl"){
-      document.dir="ltr";  
+      document.dir="ltr";
+      
     }
     else {
       document.dir="rtl";
-    } 
+     
+    }
+   
 }
 
 </script>
-    
   </body>
 </html>

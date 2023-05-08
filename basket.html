@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,9 @@
   />
   <meta name="keywords" content="elwatania,electronics,mobile,Home appliances,refrigerators,Boilers" />
   <title>Elwatania</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
@@ -24,7 +26,7 @@
     <!-- Navbar -->
     <header class="header">
         <div class="container">
-<img src="./images/Group 3.svg" alt="">
+<img id="change-lang" src="./images/Group 3.svg" alt="">
 <div class="conact">
     <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="">
     <h2>الدعم والمساعدة</h2>
@@ -34,514 +36,400 @@
         </div>
 </header>
 
-<!--big nav -->
-<section>
-  <div class="container">
-    <nav class="navigation">
-      <a href="index.html" class="logo">
-        <img src="images/Group 6.svg" alt="Logo" class="logo-img" />
-      </a>
-      <div class="main_search">
-        <input type="search" name="search" placeholder="البحث عن منتجات"  id="">
-        <img src="./images/ic_search_24px.svg" class="icon-search" alt="" srcset="">
-      </div>
-      <div class="nav_action">
-       <div class="login">
-        <a href="login.html" class="btn">
-          
-          <img src="./images/ic_account_circle_24px.svg" alt="">
-          <h2>تسجيل الدخول</h2>
-      
-       
+  <!--big nav -->
+  <section>
+    <div class="container">
+      <nav class="navigation">
+        <a href="index.html" class="logo">
+          <img src="images/Group 6.svg" alt="Logo" class="logo-img" />
         </a>
-        <ul class="logindrop">
-          <li><a href="#">حسابي</a></li>
-          <li><a href="#">طلباتي</a></li>
-          <li><a href="#">منتجاتي المفضلة</a></li>
-          <li class="mt"><a href="#" class="text-danger ">تسجيل الخروج</a></li>
-        </ul>
-       </div>
-        <a href="#!">
-          <img src="./images/ic_shopping_cart_24px.svg" alt="shopping_cart">
-        </a>
-        <div class="nav_toggle">
-          <ion-icon name="menu-outline"></ion-icon>
+        <div class="main_search">
+          <input
+            type="search"
+            name="search"
+            placeholder="البحث عن منتجات"
+            id=""
+          />
+          <img
+            src="./images/ic_search_24px.svg"
+            class="icon-search"
+            alt=""
+            srcset=""
+          />
         </div>
-      </div>
-    </nav>
-    <ul class="nav_menu">
-      <li class="nav_list nav_list_menu">
-        <a href="#!" class="nav_link">
-          <span >تليفزيونات وشاشات</span>
-          <ion-icon name="chevron-down-outline"><i class="fa-solid fa-angle-down"></i></ion-icon>
-        </a>
-        <div class="dropdown">
-          <div class="dropdown-inner">
-            <div class="dropdown-item">
-              <h3 class="item-heading">تليفزيونات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-            </div>
-
-            <div class="dropdown-item">
-              <h3 class="item-heading">شاشات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات سمارت </h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات LED </h4></a>
-                 
-                 
-                </div>
-              </div>
-             
-            </div>
-            <div class="dropdown-item">
-              <h3 class="item-heading">رسيفارات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4>  رسيفر LED </h4></a>
-                 
-                 
-                </div>
-              </div>
-             
-            </div>
+        <div class="nav_action">
+          <div class="login">
+            <a href="login.html" class="btn">
+              <img src="./images/ic_account_circle_24px.svg" style="width: 22px;" alt="" />
+              <h2>تسجيل الدخول</h2>
+            </a>
+            <ul class="logindrop">
+              <li><a href="main.html">حسابي</a></li>
+              <li><a href="#">طلباتي</a></li>
+              <li><a href="#">منتجاتي المفضلة</a></li>
+              <li class="mt">
+                <a href="#" class="text-danger">تسجيل الخروج</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#!">
+            <img
+              src="./images/ic_shopping_cart_24px.svg" style="width: 22px;"
+              alt="shopping_cart"
+            />
+          </a>
+          <div class="nav_toggle">
+            <ion-icon name="menu-outline"></ion-icon>
           </div>
         </div>
-      </li>
-      <li class="nav_list nav_list_menu">
-        <a href="#!" class="nav_link">
-          <span>  تليفزيونات وشاشات</span>
-          <ion-icon name="chevron-down-outline"><i class="fa-solid fa-angle-down"></i></ion-icon>
-        </a>
-        <div class="dropdown">
-          <div class="dropdown-inner">
-            <div class="dropdown-item">
-              <h3 class="item-heading">تليفزيونات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
+      </nav>
+      <ul class="nav_menu">
+        <li class="nav_list nav_list_menu">
+          <div  class="nav_link">
+           <a href="tv.html" > <span> تليفزيونات وشاشات</span></a>
+            <ion-icon name="chevron-down-outline"
+              ><i class="fa-solid fa-angle-down"></i
+            ></ion-icon>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-item">
+                <h3 class="item-heading">تليفزيونات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-            </div>
 
-            <div class="dropdown-item">
-              <h3 class="item-heading">شاشات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات سمارت </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">شاشات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات سمارت</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات LED</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات LED </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">رسيفارات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>رسيفر LED</h4></a>
+                  </div>
                 </div>
               </div>
-             
-            </div>
-            <div class="dropdown-item">
-              <h3 class="item-heading">رسيفارات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4>  رسيفر LED </h4></a>
-                 
-                 
-                </div>
-              </div>
-             
             </div>
           </div>
-        </div>
-      </li>
-      <li class="nav_list nav_list_menu">
-        <a href="#!" class="nav_link">
-          <span> أدوات مطبخ </span>
-          <ion-icon name="chevron-down-outline"><i class="fa-solid fa-angle-down"></i></ion-icon>
-        </a>
-        <div class="dropdown">
-          <div class="dropdown-inner">
-            <div class="dropdown-item">
-              <h3 class="item-heading">تليفزيونات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
+        </li>
+        <li class="nav_list nav_list_menu">
+          <div  class="nav_link">
+           <a href="tv.html" > <span>  الأجهزة المنزلية</span></a>
+            <ion-icon name="chevron-down-outline"
+              ><i class="fa-solid fa-angle-down"></i
+            ></ion-icon>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-item">
+                <h3 class="item-heading">تليفزيونات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-            </div>
 
-            <div class="dropdown-item">
-              <h3 class="item-heading">شاشات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات سمارت </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">شاشات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات سمارت</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات LED</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات LED </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">رسيفارات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>رسيفر LED</h4></a>
+                  </div>
                 </div>
               </div>
-             
-            </div>
-            <div class="dropdown-item">
-              <h3 class="item-heading">رسيفارات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4>  رسيفر LED </h4></a>
-                 
-                 
-                </div>
-              </div>
-             
             </div>
           </div>
-        </div>
-      </li>
-      <li class="nav_list nav_list_menu">
-        <a href="#!" class="nav_link">
-          <span>  مكانس كهربائية</span>
-          <ion-icon name="chevron-down-outline"><i class="fa-solid fa-angle-down"></i></ion-icon>
-        </a>
-        <div class="dropdown">
-          <div class="dropdown-inner">
-            <div class="dropdown-item">
-              <h3 class="item-heading">تليفزيونات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
+        </li>
+        <li class="nav_list nav_list_menu">
+          <div  class="nav_link">
+           <a href="tv.html" > <span>  مكانس كهربائية</span></a>
+            <ion-icon name="chevron-down-outline"
+              ><i class="fa-solid fa-angle-down"></i
+            ></ion-icon>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-item">
+                <h3 class="item-heading">تليفزيونات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-            </div>
 
-            <div class="dropdown-item">
-              <h3 class="item-heading">شاشات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات سمارت </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">شاشات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات سمارت</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات LED</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات LED </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">رسيفارات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>رسيفر LED</h4></a>
+                  </div>
                 </div>
               </div>
-             
-            </div>
-            <div class="dropdown-item">
-              <h3 class="item-heading">رسيفارات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4>  رسيفر LED </h4></a>
-                 
-                 
-                </div>
-              </div>
-             
             </div>
           </div>
-        </div>
-      </li>
-      <li class="nav_list nav_list_menu">
-        <a href="#!" class="nav_link">
-          <span>  الأجهزة المنزلية</span>
-          <ion-icon name="chevron-down-outline"><i class="fa-solid fa-angle-down"></i></ion-icon>
-        </a>
-        <div class="dropdown">
-          <div class="dropdown-inner">
-            <div class="dropdown-item">
-              <h3 class="item-heading">تليفزيونات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
+        </li>
+        <li class="nav_list nav_list_menu">
+          <div  class="nav_link">
+           <a href="tv.html" > <span> تليفزيونات وشاشات</span></a>
+            <ion-icon name="chevron-down-outline"
+              ><i class="fa-solid fa-angle-down"></i
+            ></ion-icon>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-item">
+                <h3 class="item-heading">تليفزيونات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-            </div>
 
-            <div class="dropdown-item">
-              <h3 class="item-heading">شاشات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات سمارت </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">شاشات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات سمارت</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات LED</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات LED </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">رسيفارات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>رسيفر LED</h4></a>
+                  </div>
                 </div>
               </div>
-             
-            </div>
-            <div class="dropdown-item">
-              <h3 class="item-heading">رسيفارات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4>  رسيفر LED </h4></a>
-                 
-                 
-                </div>
-              </div>
-             
             </div>
           </div>
-        </div>
-      </li>
-      <li class="nav_list nav_list_menu">
-        <a href="#!" class="nav_link">
-          <span> تليفزيونات وشاشات</span>
-          <ion-icon name="chevron-down-outline"><i class="fa-solid fa-angle-down"></i></ion-icon>
-        </a>
-        <div class="dropdown">
-          <div class="dropdown-inner">
-            <div class="dropdown-item">
-              <h3 class="item-heading">تليفزيونات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
+        </li>
+        <li class="nav_list nav_list_menu">
+          <div  class="nav_link">
+           <a href="tv.html" > <span> تليفزيونات وشاشات</span></a>
+            <ion-icon name="chevron-down-outline"
+              ><i class="fa-solid fa-angle-down"></i
+            ></ion-icon>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-item">
+                <h3 class="item-heading">تليفزيونات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> 4k تليفزيونات</h4></a>
-                 
-                 
-                </div>
-              </div>
-            </div>
 
-            <div class="dropdown-item">
-              <h3 class="item-heading">شاشات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات سمارت </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">شاشات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات سمارت</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات LED</h4></a>
+                  </div>
                 </div>
               </div>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4> شاشات LED </h4></a>
-                 
-                 
+              <div class="dropdown-item">
+                <h3 class="item-heading">رسيفارات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>رسيفر LED</h4></a>
+                  </div>
                 </div>
               </div>
-             
-            </div>
-            <div class="dropdown-item">
-              <h3 class="item-heading">رسيفارات</h3>
-              <div class="item-list">
-               
-                <div class="item-list-info">
-                  <a href=""> <h4>  رسيفر LED </h4></a>
-                 
-                 
-                </div>
-              </div>
-             
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-<!--end big nav -->
+        </li>
+        <li class="nav_list nav_list_menu">
+          <div  class="nav_link">
+           <a href="tv.html" > <span> تليفزيونات وشاشات</span></a>
+            <ion-icon name="chevron-down-outline"
+              ><i class="fa-solid fa-angle-down"></i
+            ></ion-icon>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <div class="dropdown-item">
+                <h3 class="item-heading">تليفزيونات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>4k تليفزيونات</h4></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown-item">
+                <h3 class="item-heading">شاشات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات سمارت</h4></a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>شاشات LED</h4></a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-item">
+                <h3 class="item-heading">رسيفارات</h3>
+                <div class="item-list">
+                  <div class="item-list-info">
+                    <a href=""> <h4>رسيفر LED</h4></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--end big nav -->
 
 
 <!-- start basket-->
@@ -549,6 +437,7 @@
     <div class="container">
         <h1>السلة (2)</h1>
         <div class="my-basket">
+          <form action="">
             <div class="all-basket">
                 <div class="all-item">
                     <div class="item">
@@ -559,9 +448,9 @@
                             55u9761AE</h2>
                             <div class="price-num">
                                 <div class="add-del">
-                                    <button class="tv-add">-</button>
-                                    <h4 class="num-tv" id="num-tv">0</h4>
-                                    <button class="tv-del">+</button>
+                                    <button class="tv-del" type="button" name="del" id="tv-del">-</button>
+                                    <input type="number"  class="num-tv" name="num-tv" class="ali" id="num-tv" readonly value=1>
+                                    <button class="tv-add" type="button" class="ali" name="add" id="1">+</button>
                   
                                   </div>
                                 <h3 class="price">20,340 ج م</h3>
@@ -569,18 +458,106 @@
                        </div>
                     </div>
                     <div class="end-basket">
-                        <button class="addto-fi">
-                            <img src="./images/ic_favorite_bor.svg" alt="">
-                            <h3>اضف الي منتجاتي المفضلة</h3>
+                        <button class="addto-fi" type="submit">
+                            <img src="./images/Group 36.svg" alt="">
+                            <h3>اضف الي المفضلة</h3>
                         </button>
-                        <button class="delet-item">
-                            <img src="./images/ic_delete_forever_24px.svg" alt="">
+                        <button class="delet-item" type="submit">
+                            <img src="./images/Group 401.svg" alt="">
                             <h4>مسح المنتج</h4>
                         </button>
                     </div>
                 </div>
+                <div class="all-item">
+                  <div class="item">
+                      <img src="./images/2b.svg" alt="">
+                     <div class="item-about">
+                      <h2>تليفزيون توشيبا سمارت 55 بوصة<br>
+                          رسيفر داخلي
+                          55u9761AE</h2>
+                          <div class="price-num">
+                              <div class="add-del">
+                                  <button class="tv-del" type="button" name="del" id="tv-del">-</button>
+                                  <input type="number"  class="num-tv" name="num-tv" class="ali" id="num-tv" readonly value=1>
+                                  <button class="tv-add" type="button" class="ali" name="add" id="1">+</button>
                 
+                                </div>
+                              <h3 class="price">20,340 ج م</h3>
+                          </div>
+                     </div>
+                  </div>
+                  <div class="end-basket">
+                      <button class="addto-fi" type="submit">
+                          <img src="./images/Group 36.svg" alt="">
+                          <h3>اضف الي المفضلة</h3>
+                      </button>
+                      <button class="delet-item" type="submit">
+                          <img src="./images/Group 401.svg" alt="">
+                          <h4>مسح المنتج</h4>
+                      </button>
+                  </div>
+              </div>
+              <div class="all-item">
+                <div class="item">
+                    <img src="./images/2b.svg" alt="">
+                   <div class="item-about">
+                    <h2>تليفزيون توشيبا سمارت 55 بوصة<br>
+                        رسيفر داخلي
+                        55u9761AE</h2>
+                        <div class="price-num">
+                            <div class="add-del">
+                                <button class="tv-del" type="button" name="del" id="tv-del">-</button>
+                                <input type="number"  class="num-tv" name="num-tv" class="ali" id="num-tv" readonly value=1>
+                                <button class="tv-add" type="button" class="ali" name="add" id="1">+</button>
+              
+                              </div>
+                            <h3 class="price">20,340 ج م</h3>
+                        </div>
+                   </div>
+                </div>
+                <div class="end-basket">
+                    <button class="addto-fi" type="submit">
+                        <img src="./images/Group 36.svg" alt="">
+                        <h3>اضف الي المفضلة</h3>
+                    </button>
+                    <button class="delet-item" type="submit">
+                        <img src="./images/Group 401.svg" alt="">
+                        <h4>مسح المنتج</h4>
+                    </button>
+                </div>
+              </div>
+                <div class="all-item">
+                  <div class="item">
+                      <img src="./images/2b.svg" alt="">
+                     <div class="item-about">
+                      <h2>تليفزيون توشيبا سمارت 55 بوصة<br>
+                          رسيفر داخلي
+                          55u9761AE</h2>
+                          <div class="price-num">
+                              <div class="add-del">
+                                  <button class="tv-del" type="button" name="del" id="tv-del">-</button>
+                                  <input type="number"  class="num-tv" name="num-tv" id="num-tv" readonly value=1>
+                                  <button class="tv-add" type="button" class="ali" name="add" id="tv-add">+</button>
+                
+                                </div>
+                              <h3 class="price">20,340 ج م</h3>
+                          </div>
+                     </div>
+                  </div>
+                  <div class="end-basket">
+                      <button class="addto-fi" type="submit">
+                          <img src="./images/Group 36.svg" alt="">
+                          <h3>اضف الي المفضلة</h3>
+                      </button>
+                      <button class="delet-item" type="submit">
+                          <img src="./images/Group 401.svg" alt="">
+                          <h4>مسح المنتج</h4>
+                      </button>
+                  </div>
+              </div>
             </div>
+          </form>
+           <form action="">
             <div class="summer-basket">
                 <h2>ملخص الطلب</h2>
                 <ul>
@@ -601,7 +578,7 @@
 
 
                         </div>
-                        <button class="checkout">تطبيق</button>
+                        <button class="checkout" type="submit">تطبيق</button>
                     </li>
                     <li><span class="line"></span></li>
                     <li class="total">
@@ -609,8 +586,9 @@
                         <h4>20,340 ج م</h4>
                     </li>
                 </ul>
-                <a href="pay-steps.html"><button class="coun-pay">الاستمرار للدفع</button></a>
+                <a href="pay-steps.html"><button type="submit"  class="coun-pay">الاستمرار للدفع</button></a>
             </div>
+          </form>
         </div>
     </div>
 </div>
@@ -634,10 +612,19 @@
               <h4>
                 تابع اخر العروض والخصومات
               </h4>
-              <div class="email">
-                <input type="email" name="" placeholder="البريد الالكتروني" id="">
-                <button type="submit"><img src="./images/Path 52.svg" alt=""></button>
-              </div>
+              <form action="">
+                <div class="email">
+                  <input
+                    type="email"
+                    name=""
+                    placeholder="البريد الالكتروني"
+                    id=""
+                  />
+                  <button type="submit">
+                    <img src="./images/Path 52.svg" alt="" />
+                  </button>
+                </div>
+              </form>
             
             </li>
             <li class="imagestore">
@@ -700,6 +687,29 @@
 
 
 
+  <script> 
+    var del = document.getElementsByName("del");
+    const add = document.getElementsByName("add")
+    const val =  document.getElementsByName("num-tv")
+    const ahmed = function(){
+      
+    }
+    const addcount = []
+    for(i=0;i<=add.length-1;i++){addcount.push(i)}
+  addcount.map((addone, index)=>{
+    del[index].addEventListener("click", function () {
+      if (+val[index].value <= 1) {
+        val[index].value="1";
+      } else if(val[index].value = 1 ) {
+      val[index].value=+val[index].value-1
+      }
+    });
+    add[index].addEventListener("click", function () {
+  val[index].value=+val[index].value+1;
+  ahmed()
+   })
+});
+  </script> 
 
     
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -709,7 +719,19 @@
       <script src="./js/allowl.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    
+    <script>
+   
+
+const lang = document.getElementById("change-lang");
+lang.onclick=()=>{
+    if(document.dir==="rtl"){
+      document.dir="ltr";
+    }
+    else {
+      document.dir="rtl";
+    }
+}
+</script>
     
   </body>
 </html>

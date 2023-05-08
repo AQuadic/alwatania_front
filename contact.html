@@ -11,17 +11,16 @@
     <meta name="keywords" content="elwatania,electronics,mobile,Home appliances,refrigerators,Boilers" />
     <title>Elwatania</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  
+      <link rel="stylesheet" href="./css/owl.carousel.min.css">
+      <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="./css/all.min.css">
+      <link rel="stylesheet" href="css/style.css" />
    
   </head>
   <body>
-    
+   
     <!-- Navbar -->
     <header class="header">
         <div class="container">
@@ -30,7 +29,7 @@
     <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="">
     <h2>الدعم والمساعدة</h2>
 </div>
-<a href="contact.html">تواصل معنا</a>
+<h2>تواصل معنا</h2>
 
         </div>
 </header>
@@ -88,48 +87,50 @@
 <!--end big nav -->
 
 <!--start main page-->
-<div class="main ">
+<div class="contact ">
     <div class="container">
-<div class="main-link">
-    <div class="user">
-        <div class="user-info">
-            <h1 class="name-user">ibrahem eslam</h1>
-            <h2 class="email-user">ibrahemeslam345@gmail.com </h2>
+<div class="part1">
+    <form>
+<h2>تواصل معنا</h2>
+        <div class="form-row row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">الاسم الاول</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="اكتب اسمك">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">اسم العائلة</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="اكتب اللقب">
+          </div>
         </div>
-        <a href="forms.html" class="user-update"><img src="./images/edit (1).svg" alt=""></a>
-    </div>
-    <ul>
-        <li class="link-activ"><a href="main.html">
-            <img src="./images/Path 262.svg" alt="">
-            <h2>الرئيسية</h2>
-        </a></li>
-        <li><a href="request.html">
-            <img src="./images/ic_view_list_24px.svg" alt="">
-            <h2>طلباتي</h2>
-        </a></li>
-        <li><a href="perfect.html">
-          <img src="./images/ic_fav.svg" alt="">
-            <h2>منتجاتي المفضلة</h2>
-        </a></li>
-        <li><a href="address.html">
-          <img src="./images/Icon material-location-on.svg" alt="">
-            <h2> العناوين</h2>
-        </a></li>
-    </ul>
-    <a href="login.html" class="logout">تسجيل الخروج</a>
+        <div class="form-group">
+          <label for="inputemail">البريد الالكترونى</label>
+          <input type="email" class="form-control" id="inputemail" placeholder="اكتب بريدك الالكترونى">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">الرسالة</label>
+          <textarea class="form-control" id="inputAddress2" name="" id="" placeholder="اكتب رسالتك"></textarea>
+         
+        </div>
+       
+        <button type="submit" class="btn btn-primary a-btn">ارسال</button>
+      </form>
 </div>
-<div class="main-about">
-    <h1>مرحبا ابراهيم</h1>
-    <div class="part">
-        <h2>احدث طلب</h2>
-        <p>ليس لديك أي طلبات سابقة , تسوق الان وتتبع طلباتك بسهولة</p>
-        <button>تسوق الان</button>
-    </div>
-    <div class="part">
-        <h2> عنوان التوصيل</h2>
-        <p>ليس لديك أي عناوين مسجلة, يمكنك إضافة عنوان لسرعة وسهولة عملية الشرا</p>
-        <button> اضافة عنوان</button>
-    </div>
+<div class="part2">
+    <a href="">
+<img src="./images/Group 482.svg" alt="">
+<div >
+    <h3>التواصل عبر الهاتف</h3>
+    <h4>+02 152 1254 125</h4>
+</div>
+    </a>
+    <a href="">
+        <img src="./images/Group 487.svg" alt="">
+        <div >
+            <h3>  التواصل عبر البريد الالكترونى</h3>
+            <h4>Alwatanyahelp@gmail.com</h4>
+        </div>
+            </a>
+    
 </div>
     </div>
 </div>
@@ -237,22 +238,23 @@
       <script src="./js/allowl.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    
     <script>
-    
-
+     
 const lang = document.getElementById("change-lang");
 
 lang.onclick=()=>{
     if(document.dir==="rtl"){
       document.dir="ltr";
+     
     }
     else {
       document.dir="rtl";
+      
     }
    
 }
 
 </script>
+    
   </body>
 </html>

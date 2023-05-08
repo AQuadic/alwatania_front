@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,11 +11,12 @@
     <meta name="keywords" content="elwatania,electronics,mobile,Home appliances,refrigerators,Boilers" />
     <title>Elwatania</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  
+      <link rel="stylesheet" href="./css/owl.carousel.min.css">
+      <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="./css/all.min.css">
+      <link rel="stylesheet" href="css/style.css" />
    
    
   </head>
@@ -24,7 +25,7 @@
     <!-- Navbar -->
     <header class="header">
         <div class="container">
-<img src="./images/Group 3.svg" alt="">
+<img id="change-lang" src="./images/Group 3.svg" alt="">
 <div class="conact">
     <img src="./images/ic_keyboard_arrow_down_24px.svg" alt="">
     <h2>الدعم والمساعدة</h2>
@@ -37,28 +38,31 @@
 <!--start login page-->
 <div class="page-login">
     <div class="container">
-    <div class="login-logo">
-<img src="./images/logo png 2-01.svg" class="bigimage" alt="logo alwatania">
-<img src="./images/Group 6.svg" class="imgsmall" alt="logo alwatania">
-    </div>
-    <div class="form-login">
+   
+    <div class="form-login getcount">
 <div class="headform">
-    <a href="login.html"><img src="./images/ic_clear_24px.svg" alt=""></a>
+    <a href="login.html"><img src="./images/ic_clear_24px.svg" style="width: 18px;" alt=""></a>
     <h1>استرجاع الحساب</h1>
 </div>
 
 
 
-
-<div class="login-email">
+<form action="" method="post">
+  <div class="login-email">
     <h2>البريد الالكتروني</h2>
     <input type="email" name="" placeholder="اكتب البريد الالكتروني" id="">
 </div>
 
 
 <input type="submit" value="  ارسال خطوات الاسترجاع">
+</form>
+
 <a href="login.html" class="cancle">الغاء</a>
     </div>
+    <div class="login-logo">
+      <img src="./images/logo png 2-01.svg" class="bigimage" alt="logo alwatania">
+      <img src="./images/Group 6.svg" class="imgsmall" alt="logo alwatania">
+          </div>
 </div>
 </div>
 <!--end login page-->
@@ -78,10 +82,19 @@
               <h4>
                 تابع اخر العروض والخصومات
               </h4>
-              <div class="email">
-                <input type="email" name="" placeholder="البريد الالكتروني" id="">
-                <button type="submit"><img src="./images/Path 52.svg" alt=""></button>
-              </div>
+              <form action="">
+                <div class="email">
+                  <input
+                    type="email"
+                    name=""
+                    placeholder="البريد الالكتروني"
+                    id=""
+                  />
+                  <button type="submit">
+                    <img src="./images/Path 52.svg" alt="" />
+                  </button>
+                </div>
+              </form>
             
             </li>
             <li class="imagestore">
@@ -154,6 +167,26 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.js"></script>
     
+    <script>
     
+
+const lang = document.getElementById("change-lang");
+
+
+ 
+  
+lang.onclick=()=>{
+    if(document.dir==="rtl"){
+      document.dir="ltr";
+      
+    }
+    else {
+      document.dir="rtl";
+     
+    }
+   
+}
+
+</script>
   </body>
 </html>
