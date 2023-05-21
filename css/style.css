@@ -1611,6 +1611,9 @@ h1 a {
 }
 .tv-about .tv-image .big-image img {
   width: 100%;
+  object-fit: contain;
+  height: auto;
+  max-height: 480px;
 }
 .tv-about .tv-image .sm-image {
   margin-top: 20px;
@@ -1619,6 +1622,9 @@ h1 a {
   display: flex;
   justify-content: center;
   gap: 90px;
+}
+.tv-about .tv-image .sm-image ul img{
+  object-fit: contain;
 }
 .tv-about .tv-details {
 }
