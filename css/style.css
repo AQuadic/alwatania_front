@@ -203,7 +203,7 @@ li.r-title,
     background-color: white;
     border-radius: 25px;
     position: relative;
-    height: 380px;
+    height: 390px;
 }
 
 .shadow-effect {
@@ -510,9 +510,10 @@ html[dir=ltr] .app .bigimage {
         display: inline-block;
         padding-bottom: 10px;
     }
+    
 }
 
-@media (max-width: 550px) {
+@media (max-width: 680px) {
     .app .container h2 {
         font-size: 20px;
         margin-bottom: 12px;
@@ -545,6 +546,7 @@ html[dir=ltr] .app .bigimage {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(98px, 160px));
     grid-column-gap: 0px;
+    grid-row-gap: 10px;
 }
 
 .alamat .logo-company img {
@@ -1794,7 +1796,8 @@ h1 a {
 @media (max-width: 535px) {
     .show .all-item .item,
     .perfect .main-about .item {
-        max-width: 174px;
+        min-width: 174px;
+        max-width: 94%;
     }
 }
 
@@ -1897,10 +1900,13 @@ h1 a {
 }
 
 .tv-about .tv-image {
+
 }
 
 .tv-about .tv-image .big-image {
     max-width: 580px;
+    object-fit: contain;
+    margin: auto;
 }
 
 .tv-about .tv-image .big-image img {
@@ -2037,7 +2043,7 @@ h1 a {
 
 @media (max-width: 1400px) {
     .tv-about .tv-image {
-        width: 100%;
+        width: 100% !important;
     }
 
     .tv-about .tv-image .big-image img {
