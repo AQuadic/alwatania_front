@@ -1929,9 +1929,15 @@ h1 a {
     display: flex;
     justify-content: center;
     gap: 22px;
+    flex-wrap: wrap;
 }
+.tv-about .tv-image .sm-image ul li{
+    max-width: 30%;
+}
+
 .tv-about .tv-image .sm-image ul img{
   object-fit: contain;
+  max-width: 100%;
 }
 .tv-about .tv-details {
 }
