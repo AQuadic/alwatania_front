@@ -463,13 +463,13 @@
         <div class="tv-about">
           <div class="tv-image" data-aos="zoom-in">
             <div class="big-image">
-              <img src="./images/222.svg" id="img_show" alt="tv-image" />
+              <img src="./images/222.svg" id="img_show" alt="tv-image" srcset="./images/222.svg" />
             </div>
             <div class="sm-image">
               <ul>
-                <li><img src="./images/223.svg" class="def_img" alt="" /></li>
-                <li><img src="./images/224.svg" class="def_img" alt="" /></li>
-                <li><img src="./images/225.svg" class="def_img" alt="" /></li>
+                <li><img src="./images/223.svg" srcset="./images/223.svg" class="def_img" alt="" /></li>
+                <li><img src="./images/224.svg" srcset="./images/224.svg" class="def_img" alt="" /></li>
+                <li><img src="./images/225.svg" srcset="./images/225.svg" class="def_img" alt="" /></li>
               </ul>
             </div>
           </div>
@@ -912,7 +912,8 @@
       const img_show = document.getElementById("img_show")
       const def_img = document.getElementsByClassName("def_img")
        const ahmed = function  (){
-      img_show.src =this.src
+      img_show.src =this.src;
+      img_show.srcset=this.srcset
     }
     for(i=0 ; i<=def_img.length ; i++){
       def_img[i].addEventListener("click",ahmed)

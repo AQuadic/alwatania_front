@@ -1914,11 +1914,15 @@ h1 a {
   max-height: 480px;
   height: auto;
   object-fit: contain;
-
+  mix-blend-mode: darken
 }
 
 .tv-about .tv-image .sm-image {
     margin-top: 20px;
+}
+.tv-about .tv-image .sm-image img {
+    object-fit: contain;
+    mix-blend-mode: darken
 }
 
 .tv-about .tv-image .sm-image ul {
@@ -2005,6 +2009,7 @@ h1 a {
     color: #f28140;
     font-size: 30px;
     font-family: Amiri;
+    outline: none;
 }
 
 .tv-about .tv-details .add-del .num-tv,
