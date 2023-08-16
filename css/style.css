@@ -455,7 +455,7 @@ html[dir=ltr] .app .bigimage {
 .app .bigimage {
     width: 100%;
     max-height: 807px;
-
+object-fit: cover;
 }
 
 .app .container {
