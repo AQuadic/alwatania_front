@@ -900,6 +900,47 @@
     <script src="js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+       /*owl two*/ 
+
+    jQuery(document).ready(function($) {
+        "use strict";
+        $('#customers-testimonials2').owlCarousel( {
+                loop: true,
+                center: false,
+                items: 3,
+                margin: 35,
+                autoplay: false,
+                dots:true,
+            nav:true,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                navText: [' <img src="./images/arrow_left.svg" alt="">','   <img src="./images/arrow_right.svg" alt=""> '],
+                responsive: {
+                    0: {
+                        items: 1.3
+                    },
+                    325: {
+                        items: 1.5
+                    },
+                    425: {
+                        items: 1.5
+                    },
+                    600: {
+                        items: 1.8
+                    },
+                    768: {
+                        items: 3
+                    },
+                   
+                    1200: {
+                        items: 4.5
+                    },
+                    
+                }
+            });
+        });
+    </script>
+    <script>
       AOS.init();
       const lang = document.getElementById("change-lang");
       lang.onclick = () => {
