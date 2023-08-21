@@ -582,7 +582,7 @@ object-fit: cover;
 
 footer.footer-dec {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row-reverse;
 }
 
@@ -620,13 +620,17 @@ p.footer-links {
 
 li.r-title {
     margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Dubaib';
+    margin-bottom: 12px;
 }
 
 .r-footer a {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -642,16 +646,19 @@ li.r-title {
     footer.footer-dec {
         gap: 50px;
         flex-flow: wrap;
-        justify-content: flex-start;
+       flex-wrap: wrap;
     }
 }
 
 @media (max-width: 768px) {
+     footer.footer-dec {
+        justify-content:flex-start;
+    }
 }
 
 @media (max-width: 470px) {
     footer.footer-dec {
-        justify-content: start;
+        justify-content: flex-start;
         gap: 20px;
     }
 
@@ -1415,7 +1422,7 @@ li.mt {
 
 .tv ol.breadcrumb,
 .tv-product ol.breadcrumb {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 300;
 }
 
@@ -1875,7 +1882,7 @@ h1 a {
 
 .tv .breadcrumb-item.active,
 .tv-product .breadcrumb-item.active {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 @media (max-width: 772px) {
