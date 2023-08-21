@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,7 +27,7 @@
    
      <!-- card -->
      <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="images/Group 6.svg" alt="Logo" alt="Card image cap">
+      <img class="card-img-top" src="images/logo.svg" alt="Logo" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -1171,10 +1171,10 @@
               </li>
               <li class="imagestore">
                 <a href="#"
-                  ><img src="./images/Group 102.svg" alt="google-play"
+                  ><img src="./images/playstore.svg" alt="google-play"
                 /></a>
                 <a href="#"
-                  ><img src="./images/Group 103.svg" alt="App-store"
+                  ><img src="./images/appstore.svg" alt="App-store"
                 /></a>
               </li>
             </ul>
@@ -1234,7 +1234,14 @@
     <script>
       AOS.init();
 
-
+      const lang = document.getElementById("change-lang");
+      lang.onclick = () => {
+        if (document.dir === "rtl") {
+          document.dir = "ltr";
+        } else {
+          document.dir = "rtl";
+        }
+      };
  
   
 
