@@ -2019,10 +2019,10 @@ color: #d9342e;
 .tv-about .tv-details .add-del,
 .basket .add-del {
   display: flex;
-  width: 180px;
+  width: 150px;
   justify-content: space-between;
   height: 36px;
-  padding: 0px 22px;
+
   align-items: center;
   border: 1px #f28140 solid;
   border-radius: 7px;
@@ -2043,7 +2043,7 @@ color: #d9342e;
 
 .tv-about .tv-details .add-del .num-tv,
 .basket .add-del .num-tv {
-  font-size: 25px;
+  font-size: 16px;
   margin: 0;
   font-weight: 400;
 }
@@ -2064,11 +2064,12 @@ color: #d9342e;
 }
 
 .tv-about .tv-details .tv-data {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 23px;
-  line-height: 40px;
-  font-family: "Dubair";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    line-height: 24px;
+    font-family: "Dubair";
+    color: #808083;
 }
 
 .tv-about .tv-details .add-to {
@@ -2136,9 +2137,8 @@ color: #d9342e;
 
   .tv-about .tv-details .add-del,
   .basket .add-del {
-    width: 146px;
+    width: 120px;
     height: 34px;
-    padding: 0px 14px;
   }
 
   .tv-about .tv-details .tv-data {
@@ -4366,4 +4366,94 @@ body {
     top: 16px;
     opacity: 1;
   }
+}
+
+.AddCount {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+}
+.tv-about .btnAdd{
+    flex: 1;
+}
+.tv-about .btnAdd button{
+    width: 100% !important;
+    border-radius: 8px !important;
+}
+.tv-about .tv-details .add-del{
+    height: 50px;
+    min-width: 120px;
+direction: rtl;
+}
+.product-info-stock{
+margin-bottom: 20px;
+}
+.product-info-stock .stock span{
+    color: #03c109;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+.product-info-stock .stockValue{
+    color: #808083;
+    font-size: 1.4rem;
+}
+.AddCount{}
+.AddCount .btnCount {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.tv-about .tv-details .AddCount .btnCount button {
+    height: 25px;
+    line-height: 6px;
+    border: 1px solid #f28140;
+    border-radius: 7px 0px 0px 0px;
+    color: #434343;
+    font-size: 20px;
+    width: 36px;
+    border-left: none;
+}
+.tv-about .tv-details .AddCount .btnCount button.tv-add{
+    border-radius: 0px 0px 0px 7px;
+}
+.EndProduct {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.EndProduct button{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: transparent;
+    border: none;
+}
+.EndProduct button p{
+    font-size: 16px;
+    color: #434343;
+font-weight: 300;
+}
+@media (max-width: 772px) {
+    .tv-about {
+       
+        padding: 1.2rem;
+    }
+    .AddCount {
+       
+        gap: 10px;
+    }
+    .tv-about .tv-details .add-del {
+        height: 44px;
+       
+    }
+    .tv-about .tv-details .AddCount .btnCount button {
+        height: 22px;
+       
+    }
+    .AddCount .btnCount {
+        height: 44px;
+       
+    }
 }
