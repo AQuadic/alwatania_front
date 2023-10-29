@@ -133,16 +133,15 @@ li.r-title,
 .section .container .allimage {
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 14px;
     justify-content: center;
     /* align-items: center; */
 }
 
 .section .container .allimage .part {
-    background-color: #e9e9e963;
     text-align: center;
     border-radius: 20px;
-    max-width: 224px;
+width: 144px;
     overflow: hidden;
 }
 
@@ -150,13 +149,13 @@ li.r-title,
     width: 100%;
     transition: 0.3s;
     object-fit: contain;
-    height: 250px;
+    height: 100px;
 }
 
 .section .container .allimage .part h1 {
-    font-weight: 400;
+    font-weight: 800;
     padding: 8px 0px;
-    font-size: 22px;
+    font-size: 16px;
     font-family: 'Dubair';
 }
 
@@ -170,21 +169,21 @@ li.r-title,
 
 @media (max-width: 768px) {
     .section .container .allimage .part {
-        max-width: 225px;
+        max-width: 120px;
     }
 
     .section .container .allimage {
-        gap: 16px;
+        gap: 8px;
     }
 }
 
 @media (max-width: 502px) {
     .section .container .allimage .part {
-        max-width: 146px;
+        max-width: 110px;
     }
 
     .section .container .allimage .part h1 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .section {
@@ -192,7 +191,7 @@ li.r-title,
     }
 
     .section .container .allimage .part img {
-        height: 164px;
+        height:80px;
     }
 }
 
