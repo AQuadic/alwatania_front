@@ -280,7 +280,7 @@ li.r-title,
   color: #ae0028;
   display: none;
 }
- .allItem  .add {
+.allItem .add {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -294,7 +294,7 @@ li.r-title,
   margin: 0;
   font-family: "Dubair";
 }
- .add .salarySall{
+.add .salarySall {
   color: #a4a4a4;
   font-weight: 400 !important;
   font-size: 1.4rem;
@@ -314,7 +314,8 @@ li.r-title,
   position: relative;
   direction: ltr;
 }
-.testimonials:hover button.owl-prev,.testimonials:hover button.owl-next {
+.testimonials:hover button.owl-prev,
+.testimonials:hover button.owl-next {
   transform: scale(1);
 }
 .testimonials button.owl-prev,
@@ -362,7 +363,7 @@ button.tsok,
   height: 50px;
   border: none;
   background-color: #e23734;
-  border-radius:14px;
+  border-radius: 14px;
   font-size: 16px;
   color: white;
   font-family: Dubair;
@@ -417,8 +418,6 @@ button.tsok,
     border-radius: 8px;
   }
 }
-
-
 
 @media (max-width: 620px) {
   .testimonials button.owl-prev,
@@ -504,14 +503,11 @@ html[dir="ltr"] .app .bigimage {
 
 .app .container h3 {
   font-size: 28px;
-  font-weight: bold;
-  font-family: ui-sans-serif;
 }
 
 .app .container h2 {
   font-size: 38px;
   font-weight: bold;
-  font-family: "Font Awesome 5 Free";
   margin-bottom: 24px;
 }
 
@@ -1891,7 +1887,6 @@ h1 a {
 .main,
 .perfect,
 .basket {
-  
 }
 
 .bg-t {
@@ -1933,10 +1928,10 @@ h1 a {
   display: flex;
   gap: 120px;
   background: white;
-    padding: 30px 10px 40px;
-    border-radius: 12px;
-    border: 1px solid #ebebeb;
-    padding: 3rem;
+  padding: 30px 10px 40px;
+  border-radius: 12px;
+  border: 1px solid #ebebeb;
+  padding: 3rem;
 }
 
 .tv-about .tv-image {
@@ -2017,7 +2012,7 @@ h1 a {
 
 .tv-about .tv-details .price h2 {
   font-size: 24px;
-color: #d9342e;
+  color: #d9342e;
 }
 
 .tv-about .tv-details .price h3 {
@@ -2082,12 +2077,12 @@ color: #d9342e;
 }
 
 .tv-about .tv-details .tv-data {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 23px;
-    line-height: 24px;
-    font-family: "Dubair";
-    color: #808083;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  line-height: 24px;
+  font-family: "Dubair";
+  color: #808083;
 }
 
 .tv-about .tv-details .add-to {
@@ -2140,7 +2135,6 @@ color: #d9342e;
 
   .tv-about .tv-details .price h2 {
     font-size: 18px;
-
   }
 
   .tv-about .tv-details .tv-dli h3,
@@ -4387,101 +4381,97 @@ input.add_comment {
 }
 
 .AddCount {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 20px;
 }
-.tv-about .btnAdd{
-    flex: 1;
+.tv-about .btnAdd {
+  flex: 1;
 }
-.tv-about .btnAdd button{
-    width: 100% !important;
-    border-radius: 8px !important;
+.tv-about .btnAdd button {
+  width: 100% !important;
+  border-radius: 8px !important;
 }
-.tv-about .tv-details .add-del{
-    height: 50px;
-    min-width: 120px;
-direction: rtl;
+.tv-about .tv-details .add-del {
+  height: 50px;
+  min-width: 120px;
+  direction: rtl;
 }
-.product-info-stock{
-margin-bottom: 20px;
+.product-info-stock {
+  margin-bottom: 20px;
 }
-.product-info-stock .stock span{
-    color: #03c109;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
+.product-info-stock .stock span {
+  color: #03c109;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
 }
-.product-info-stock .stockValue{
-    color: #808083;
-    font-size: 1.4rem;
+.product-info-stock .stockValue {
+  color: #808083;
+  font-size: 1.4rem;
 }
-.AddCount{}
+.AddCount {
+}
 .AddCount .btnCount {
-    height: 50px;
-    display: flex;
-    flex-direction: column;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .tv-about .tv-details .AddCount .btnCount button {
-    height: 25px;
-    line-height: 6px;
-    border: 1px solid #f28140;
-    border-radius: 0px 0px 0px 7px;
-    color: #434343;
-    font-size: 20px;
-    width: 36px;
-    border-left: none;
+  height: 25px;
+  line-height: 6px;
+  border: 1px solid #f28140;
+  border-radius: 0px 0px 0px 7px;
+  color: #434343;
+  font-size: 20px;
+  width: 36px;
+  border-left: none;
 }
-.tv-about .tv-details .AddCount .btnCount button.tv-add{
-    border-radius: 7px 0px 0px 0px;
+.tv-about .tv-details .AddCount .btnCount button.tv-add {
+  border-radius: 7px 0px 0px 0px;
 }
 .EndProduct {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-.EndProduct button{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    background-color: transparent;
-    border: none;
+.EndProduct button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: transparent;
+  border: none;
 }
-.EndProduct button p{
-    font-size: 16px;
-    color: #434343;
-font-weight: 300;
+.EndProduct button p {
+  font-size: 16px;
+  color: #434343;
+  font-weight: 300;
 }
 @media (max-width: 772px) {
-    .tv-about {
-       
-        padding: 1.2rem;
-    }
-    .AddCount {
-       
-        gap: 10px;
-    }
-    .tv-about .tv-details .add-del {
-        height: 44px;
-       
-    }
-    .tv-about .tv-details .AddCount .btnCount button {
-        height: 22px;
-       
-    }
-    .AddCount .btnCount {
-        height: 44px;
-       
-    }
+  .tv-about {
+    padding: 1.2rem;
+  }
+  .AddCount {
+    gap: 10px;
+  }
+  .tv-about .tv-details .add-del {
+    height: 44px;
+  }
+  .tv-about .tv-details .AddCount .btnCount button {
+    height: 22px;
+  }
+  .AddCount .btnCount {
+    height: 44px;
+  }
 }
-.owl-carousel .owl-item{
+.owl-carousel .owl-item {
   margin-top: 2px;
 }
 /* .newfooter{
   background-image: url('../images/Backfooter.png');
 } */
-.ratItem{
+.ratItem {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4491,23 +4481,24 @@ font-weight: 300;
   border-radius: 4px;
   margin: 8px 0px 10px;
 }
-.ratItem .retNum{
-    display: inline-flex;
-    color: #fff;
-    padding: 3px;
-    font-size: 1.2rem;
-    border-radius: 2px;
-    align-items: center;
-    line-height: normal;
-    font-family: 'HelveticaNeueLTArabic';
-    font-weight: 500;
+.ratItem .retNum {
+  display: inline-flex;
+  color: #fff;
+  padding: 3px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  align-items: center;
+  line-height: normal;
+  font-family: "HelveticaNeueLTArabic";
+  font-weight: 500;
 }
 .ratItem .star:after {
   content: "\f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 4px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: white;
 }
-.ratItem .star{}
+.ratItem .star {
+}
