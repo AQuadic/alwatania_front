@@ -280,7 +280,12 @@ li.r-title,
   color: #ae0028;
   display: none;
 }
-
+ .allItem  .add {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
 .testimonials .item .item-details .add p.salary,
 .show .item .item-details .add p.salary,
 .perfect .main-about .item .item-details .add p.salary {
@@ -289,7 +294,13 @@ li.r-title,
   margin: 0;
   font-family: "Dubair";
 }
-
+ .add .salarySall{
+  color: #a4a4a4;
+  font-weight: 400 !important;
+  font-size: 1.4rem;
+  white-space: nowrap !important;
+  text-decoration: line-through;
+}
 .fav {
   position: absolute;
   top: 28px;
@@ -303,21 +314,26 @@ li.r-title,
   position: relative;
   direction: ltr;
 }
-
+.testimonials:hover button.owl-prev,.testimonials:hover button.owl-next {
+  transform: scale(1);
+}
 .testimonials button.owl-prev,
 .testimonials button.owl-next {
   position: absolute;
   top: calc(50% - 60px);
-  left: -64px;
+  left: -0px;
   height: 54px;
   width: 54px;
   box-shadow: 1px 1px 13px #9393939c;
   border-radius: 50%;
   z-index: 100;
+  transition: 0.3s;
+  transform: scale(0);
 }
 
 .testimonials button.owl-next {
-  left: calc(100% - -10px);
+  left: auto;
+  right: -22px;
 }
 
 .testimonials button.owl-prev img,
@@ -338,7 +354,6 @@ li.r-title,
 }
 
 button.tsok,
-button.tsok,
 .tv-about .tv-details .add-to,
 .btn-shopping {
   margin: auto;
@@ -347,11 +362,11 @@ button.tsok,
   height: 50px;
   border: none;
   background-color: #e23734;
-  border-radius: 50px;
+  border-radius:14px;
   font-size: 16px;
   color: white;
   font-family: Dubair;
-  margin: 40px auto;
+  margin: 12px auto 40px;
   transition: 0.5s;
 }
 
@@ -394,15 +409,16 @@ button.tsok,
   .perfect .main-about .item .item-details .add p.salary {
     font-size: 18px;
   }
-}
-
-@media (max-width: 390px) {
   button.tsok,
   .tv-about .tv-details .add-to {
-    width: 70%;
-    height: 40px;
+    width: 180px;
+    height: 42px;
+    margin: 12px auto 20px;
+    border-radius: 8px;
   }
 }
+
+
 
 @media (max-width: 620px) {
   .testimonials button.owl-prev,
@@ -1441,6 +1457,7 @@ li.mt {
 .tv-product ol.breadcrumb a {
   color: #b63b4d;
   font-family: "Dubair";
+  font-size: 14px;
 }
 
 .breadcrumb-item {
@@ -1892,7 +1909,8 @@ h1 a {
 
 .tv .breadcrumb-item.active,
 .tv-product .breadcrumb-item.active {
-  font-size: 18px;
+  font-size: 14px;
+  line-height: normal;
 }
 
 @media (max-width: 772px) {
@@ -4310,7 +4328,7 @@ input.add_comment {
 }
 .allItem:hover {
   background-color: white;
-  box-shadow: 0px 0px 5px #eee;
+  box-shadow: 0px 0px 5px #d7d6d6ad;
 }
 .allItem:hover .itemNew {
 }
@@ -4323,7 +4341,7 @@ input.add_comment {
   width: 90%;
   padding: 11px 5%;
   height: auto;
-  background: #03c109;
+  background: #fd4a44;
   white-space: nowrap;
   font-size: 1.4rem;
   display: inline-block;
@@ -4331,14 +4349,14 @@ input.add_comment {
   vertical-align: middle;
   border: navajowhite;
   color: white;
-  margin: 10px auto;
+  margin: 2px auto;
   transition: 0.5s;
   display: block;
   opacity: 0;
   transition: 0.4s;
 }
 .allItem .btnAdd:hover {
-  background-color: #004b9e;
+  background-color: #03c109;
 }
 .allItem .fav {
   top: 20px;
@@ -4350,9 +4368,9 @@ input.add_comment {
   top: 16px;
   opacity: 1;
 }
-body {
+/* body {
   background-color: #f5f9f9;
-}
+} */
 
 @media (max-width: 992px) {
   .allItem .btnAdd {
@@ -4409,14 +4427,14 @@ margin-bottom: 20px;
     height: 25px;
     line-height: 6px;
     border: 1px solid #f28140;
-    border-radius: 7px 0px 0px 0px;
+    border-radius: 0px 0px 0px 7px;
     color: #434343;
     font-size: 20px;
     width: 36px;
     border-left: none;
 }
 .tv-about .tv-details .AddCount .btnCount button.tv-add{
-    border-radius: 0px 0px 0px 7px;
+    border-radius: 7px 0px 0px 0px;
 }
 .EndProduct {
     display: flex;
@@ -4457,3 +4475,39 @@ font-weight: 300;
        
     }
 }
+.owl-carousel .owl-item{
+  margin-top: 2px;
+}
+/* .newfooter{
+  background-image: url('../images/Backfooter.png');
+} */
+.ratItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f58726;
+  width: fit-content;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 8px 0px 10px;
+}
+.ratItem .retNum{
+    display: inline-flex;
+    color: #fff;
+    padding: 3px;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    align-items: center;
+    line-height: normal;
+    font-family: 'HelveticaNeueLTArabic';
+    font-weight: 500;
+}
+.ratItem .star:after {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 4px;
+  font-size: .8rem;
+  color: white;
+}
+.ratItem .star{}
