@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Dubaib";
-  src: url("../webfonts/DubaiW23-Bold.ttf");
+  src: url("../webfonts/HelveticaNeueLT-Arabic-75-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Dubai";
-  src: url("../webfonts/DubaiW23-Medium.ttf");
+  src: url("../webfonts/helveticaneueltarabic.ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Dubair";
-  src: url("../webfonts/DubaiW23-Regular.ttf");
+  src: url("../webfonts/helveticaneueltarabic.ttf");
   font-weight: 200;
   font-style: normal;
 }
