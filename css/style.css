@@ -118,9 +118,7 @@ img#change-lang {
 
 .section .container h2,
 .testimonials h2,
-.alamat h2,
-li.r-title,
-.r-title h3 {
+.alamat h2 {
   font-size: 28px;
   font-weight: bold;
   font-family: "Dubaib";
@@ -172,6 +170,10 @@ li.r-title,
   .section .container .allimage {
     gap: 8px;
   }
+  li.r-title,
+.r-title h3 {
+  font-size: 1.6rem;
+}
 }
 
 @media (max-width: 502px) {
@@ -428,9 +430,7 @@ button.tsok,
 
   .section .container h2,
   .testimonials h2,
-  .alamat h2,
-  li.r-title,
-  .r-title h3 {
+  .alamat h2 {
     font-size: 20px;
   }
 }
@@ -627,7 +627,7 @@ span.recolor {
 }
 
 .l-footer h4 {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
   margin-bottom: 14px;
   font-family: "Dubair";
@@ -666,7 +666,10 @@ li.r-title {
 .r-footer li p {
   margin-bottom: 10px;
 }
-
+li.r-title,
+.r-title h3{
+font-size: 1.8rem;
+}
 @media (max-width: 1200px) {
   footer.footer-dec {
     gap: 50px;
@@ -679,6 +682,10 @@ li.r-title {
   footer.footer-dec {
     justify-content: flex-start;
   }
+  li.r-title,
+  .r-title h3{
+  font-size: 1.6rem;
+}
 }
 
 @media (max-width: 470px) {
@@ -710,7 +717,7 @@ li.r-title {
 .email {
   position: relative;
   max-width: 350px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   direction: ltr;
 }
 
@@ -723,7 +730,7 @@ li.r-title {
   border: 1px solid white;
   background-color: transparent;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .email input[type="email"]:focus-visible {
