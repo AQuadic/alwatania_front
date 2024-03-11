@@ -161,7 +161,10 @@ img#change-lang {
 .section .container .allimage .part:hover {
   box-shadow: 0px 0px 12px #70707031;
 }
-
+.section .container .allimage .item{
+    border-radius: 18px;
+    padding: 10px;
+}
 @media (max-width: 768px) {
   .section .container .allimage .part {
     max-width: 120px;
